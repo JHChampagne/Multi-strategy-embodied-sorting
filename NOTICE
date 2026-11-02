@@ -1,0 +1,24 @@
+Multi-strategy-embodied-sorting
+Copyright 2026 JHChampagne and contributors
+
+This project includes code adapted from WorkCell by Ahmed Sohail Butt:
+https://github.com/ahmedsohail2003/workcell-partA-imitation
+https://github.com/ahmedsohail2003/workcell-partB-vla
+https://github.com/ahmedsohail2003/workcell-partC-grasping
+https://github.com/ahmedsohail2003/workcell-partD-rl
+The upstream README/pyproject declarations identify Apache-2.0 licensing.
+Exact revisions are recorded in upstream.lock.json.
+
+The SO-ARM100 mesh and robot model originate from MuJoCo Menagerie,
+Copyright 2024 DeepMind Technologies Limited, Apache-2.0.
+The vendored asset directory preserves its LICENSE, README and CHANGELOG.
+WorkCell added the TCP site and wrist camera; these patches are preserved.
+
+Adapted code: Part C camera, point-cloud, pose, sphere-calibration and IK
+algorithms; Part D dynamics ensemble and CEM planner. Controller waypoints,
+learning reward definitions and ACT/VLA processing are derived from A-D.
+
+New work: common simulation core and contracts, scene/placement validation,
+multi-material scenes and policies, isolated perception/privileged views,
+single-owner executor, hybrid controller handovers, unified CLI, dataset and
+training integration, acceptance tests, measurement and documentation.

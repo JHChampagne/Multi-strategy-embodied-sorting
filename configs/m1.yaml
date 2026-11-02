@@ -1,0 +1,16 @@
+robot: so_arm100
+gpu: 0
+control_hz: 15
+task: sorting
+materials: [red, green, yellow]
+evaluation_seeds: {first: 10000, episodes: 20}
+skill_evaluation_seeds: {first: 50000, episodes: 20}
+max_retries_per_material: 2
+acceptance:
+  expert_sorting: 0.90
+  vision_sorting: 0.80
+  hybrid_sorting: 0.70
+  world_model_reach: 0.80
+world_model: {initial_transitions: 8000, max_transitions: 16000}
+rl_smoke: {algorithm: sac, steps_per_task: 4096, eval_episodes: 5}
+demonstrations: 10

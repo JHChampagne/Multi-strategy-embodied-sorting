@@ -1,0 +1,5820 @@
+{
+  "timestamp": "2026-11-02T18:18:03.479758+08:00",
+  "passed": true,
+  "gates": {
+    "expert": true,
+    "vision": true,
+    "hybrid": true,
+    "hybrid_real_mpc": true,
+    "act": true,
+    "vla": true,
+    "rl_reach": true,
+    "rl_lift": true,
+    "world_model": true,
+    "world_model_budget": true,
+    "dataset": true,
+    "video_expert": true,
+    "video_vision": true,
+    "video_hybrid": true,
+    "video_act": true,
+    "video_vla": true
+  },
+  "runs": {
+    "expert": {
+      "policy": "expert",
+      "task": "sorting",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.6491479789838195,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.011037569493055344,
+          "latency_ms_p95": 1.4679636806249619,
+          "latency_ms_p99": 1.9632215611636683,
+          "legacy_success": true
+        },
+        {
+          "seed": 10001,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.6491778809577227,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.010879244655370712,
+          "latency_ms_p95": 1.4729718677699566,
+          "latency_ms_p99": 1.9131274428218605,
+          "legacy_success": true
+        },
+        {
+          "seed": 10002,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.6412190869450569,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.010884832590818405,
+          "latency_ms_p95": 1.4701150357723236,
+          "latency_ms_p99": 1.8557493574917343,
+          "legacy_success": true
+        },
+        {
+          "seed": 10003,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.7761623999103904,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.011056661605834961,
+          "latency_ms_p95": 1.5146173536777496,
+          "latency_ms_p99": 2.340986439958218,
+          "legacy_success": true
+        },
+        {
+          "seed": 10004,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.6382924020290375,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.010694842785596848,
+          "latency_ms_p95": 1.4715504366904497,
+          "latency_ms_p99": 1.8875719979405443,
+          "legacy_success": true
+        },
+        {
+          "seed": 10005,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.6414377242326736,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.010831281542778015,
+          "latency_ms_p95": 1.4703106135129929,
+          "latency_ms_p99": 1.8287785351276467,
+          "legacy_success": true
+        },
+        {
+          "seed": 10006,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.5378208626061678,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.010137911885976791,
+          "latency_ms_p95": 1.148897921666503,
+          "latency_ms_p99": 1.8037136178463724,
+          "legacy_success": true
+        },
+        {
+          "seed": 10007,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.43788284063339233,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007665250450372696,
+          "latency_ms_p95": 1.0766640771180391,
+          "latency_ms_p99": 1.3739604037255058,
+          "legacy_success": true
+        },
+        {
+          "seed": 10008,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.9944211663678288,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.008064322173595428,
+          "latency_ms_p95": 1.026128651574254,
+          "latency_ms_p99": 3.5265662241727123,
+          "legacy_success": true
+        },
+        {
+          "seed": 10009,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.43101398181170225,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007693655788898468,
+          "latency_ms_p95": 1.0400060564279556,
+          "latency_ms_p99": 1.3573528733104487,
+          "legacy_success": true
+        },
+        {
+          "seed": 10010,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.4380539683625102,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007616821676492691,
+          "latency_ms_p95": 1.045088516548276,
+          "latency_ms_p99": 1.2659163679927596,
+          "legacy_success": true
+        },
+        {
+          "seed": 10011,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.45225101709365845,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007713679224252701,
+          "latency_ms_p95": 1.1002232786267996,
+          "latency_ms_p99": 1.7601629253477138,
+          "legacy_success": true
+        },
+        {
+          "seed": 10012,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.4346632147207856,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007742550224065781,
+          "latency_ms_p95": 1.062328927218914,
+          "latency_ms_p99": 1.5204839874058977,
+          "legacy_success": true
+        },
+        {
+          "seed": 10013,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.4396285302937031,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007757451385259628,
+          "latency_ms_p95": 1.0964472312480211,
+          "latency_ms_p99": 1.4270190149545692,
+          "legacy_success": true
+        },
+        {
+          "seed": 10014,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.998963912948966,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.008058734238147736,
+          "latency_ms_p95": 1.1278681922703981,
+          "latency_ms_p99": 4.079214995726956,
+          "legacy_success": true
+        },
+        {
+          "seed": 10015,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.42440408654510975,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.0075511634349823,
+          "latency_ms_p95": 1.0727832559496164,
+          "latency_ms_p99": 1.2899785768240712,
+          "legacy_success": true
+        },
+        {
+          "seed": 10016,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.4404425900429487,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.00756559893488884,
+          "latency_ms_p95": 1.0932774748653173,
+          "latency_ms_p99": 1.6261822544038553,
+          "legacy_success": true
+        },
+        {
+          "seed": 10017,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.4313715538010001,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007600057870149612,
+          "latency_ms_p95": 1.0856229346245527,
+          "latency_ms_p99": 1.3714790344238303,
+          "legacy_success": true
+        },
+        {
+          "seed": 10018,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.4418714214116335,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007736030966043472,
+          "latency_ms_p95": 1.1072533670812845,
+          "latency_ms_p99": 1.3743039686232854,
+          "legacy_success": true
+        },
+        {
+          "seed": 10019,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 396,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 26.135999999996393,
+          "wall_seconds": 0.4392468826845288,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 396
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007647555321455002,
+          "latency_ms_p95": 1.1165323667228222,
+          "latency_ms_p99": 1.4549652114510578,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 1.0,
+      "single_item_success_rate": 1.0,
+      "mean_retries": 0.0,
+      "wrong_sort_rate": 0.0,
+      "mean_sim_seconds": 26.135999999996393,
+      "versions": {
+        "mujoco": "3.17.0",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "torch": "2.9.1",
+        "torchvision": "0.24.1",
+        "lerobot": "0.6.1",
+        "transformers": "5.5.4",
+        "gymnasium": "1.4.0",
+        "stable-baselines3": "2.9.2"
+      },
+      "gpu": 0,
+      "control_dt": 0.066,
+      "checkpoint": "None",
+      "capability": "sorting"
+    },
+    "vision": {
+      "policy": "vision",
+      "task": "sorting",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 4.6499556414783,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.017372891306877136,
+          "latency_ms_p95": 0.9967305231839418,
+          "latency_ms_p99": 1.7428981605917202,
+          "legacy_success": true
+        },
+        {
+          "seed": 10001,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.4847297221422195,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007536262273788452,
+          "latency_ms_p95": 0.861933920532465,
+          "latency_ms_p99": 1.2490839697420593,
+          "legacy_success": true
+        },
+        {
+          "seed": 10002,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.3935505226254463,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.00752648338675499,
+          "latency_ms_p95": 0.85276341997087,
+          "latency_ms_p99": 1.3016881421208364,
+          "legacy_success": true
+        },
+        {
+          "seed": 10003,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.403745691291988,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007577706128358841,
+          "latency_ms_p95": 0.8540637791156769,
+          "latency_ms_p99": 1.4710145071148857,
+          "legacy_success": true
+        },
+        {
+          "seed": 10004,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.4162604082375765,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007689930498600006,
+          "latency_ms_p95": 0.866185873746872,
+          "latency_ms_p99": 1.4100578613579238,
+          "legacy_success": true
+        },
+        {
+          "seed": 10005,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.4035692615434527,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007535330951213837,
+          "latency_ms_p95": 0.8251767139881849,
+          "latency_ms_p99": 1.5104961115866853,
+          "legacy_success": true
+        },
+        {
+          "seed": 10006,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.450073898769915,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007486436516046524,
+          "latency_ms_p95": 0.867276219651103,
+          "latency_ms_p99": 1.4471303671598408,
+          "legacy_success": true
+        },
+        {
+          "seed": 10007,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.5705719543620944,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007505062967538834,
+          "latency_ms_p95": 0.8290030527859926,
+          "latency_ms_p99": 1.230399543419479,
+          "legacy_success": true
+        },
+        {
+          "seed": 10008,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.601993174292147,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007473863661289215,
+          "latency_ms_p95": 0.8608298376202583,
+          "latency_ms_p99": 7.241103099659017,
+          "legacy_success": true
+        },
+        {
+          "seed": 10009,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.6268932968378067,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007477588951587677,
+          "latency_ms_p95": 0.8614347316324711,
+          "latency_ms_p99": 1.296994881704448,
+          "legacy_success": true
+        },
+        {
+          "seed": 10010,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.6056891242042184,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007436145097017288,
+          "latency_ms_p95": 0.8328189142048359,
+          "latency_ms_p99": 1.2364031746983515,
+          "legacy_success": true
+        },
+        {
+          "seed": 10011,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.613418853841722,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007452443242073059,
+          "latency_ms_p95": 0.8660333696752787,
+          "latency_ms_p99": 7.180481543764404,
+          "legacy_success": true
+        },
+        {
+          "seed": 10012,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.66390966065228,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007451046258211136,
+          "latency_ms_p95": 0.8484828285872936,
+          "latency_ms_p99": 1.3243316207081055,
+          "legacy_success": true
+        },
+        {
+          "seed": 10013,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.618313482031226,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.0074785202741622925,
+          "latency_ms_p95": 0.867118127644062,
+          "latency_ms_p99": 1.2960424646735178,
+          "legacy_success": true
+        },
+        {
+          "seed": 10014,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.613215634599328,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007512979209423065,
+          "latency_ms_p95": 0.8404257241636515,
+          "latency_ms_p99": 7.203753711655665,
+          "legacy_success": true
+        },
+        {
+          "seed": 10015,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.598666519857943,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007479451596736908,
+          "latency_ms_p95": 0.8337723556905985,
+          "latency_ms_p99": 1.3282658066600543,
+          "legacy_success": true
+        },
+        {
+          "seed": 10016,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.6176845198497176,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007526949048042297,
+          "latency_ms_p95": 0.8643856272101402,
+          "latency_ms_p99": 7.183113088831235,
+          "legacy_success": true
+        },
+        {
+          "seed": 10017,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.7500634528696537,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.0075232237577438354,
+          "latency_ms_p95": 0.8677297737449408,
+          "latency_ms_p99": 1.4199908357113566,
+          "legacy_success": true
+        },
+        {
+          "seed": 10018,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.375246020965278,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007587019354104996,
+          "latency_ms_p95": 0.8936768863350153,
+          "latency_ms_p99": 1.5204038470983468,
+          "legacy_success": true
+        },
+        {
+          "seed": 10019,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 2.4038759991526604,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.007761642336845398,
+          "latency_ms_p95": 0.8899143431335688,
+          "latency_ms_p99": 1.530531095340844,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 1.0,
+      "single_item_success_rate": 1.0,
+      "mean_retries": 0.0,
+      "wrong_sort_rate": 0.0,
+      "mean_sim_seconds": 33.39599999999485,
+      "versions": {
+        "mujoco": "3.17.0",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "torch": "2.9.1",
+        "torchvision": "0.24.1",
+        "lerobot": "0.6.1",
+        "transformers": "5.5.4",
+        "gymnasium": "1.4.0",
+        "stable-baselines3": "2.9.2"
+      },
+      "gpu": 0,
+      "control_dt": 0.066,
+      "checkpoint": "None",
+      "capability": "sorting"
+    },
+    "hybrid": {
+      "policy": "hybrid",
+      "task": "sorting",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 554,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.56399999999872,
+          "wall_seconds": 5.831154590472579,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 48
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 23
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 13
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 12
+            }
+          ],
+          "latency_ms_p50": 0.019428785890340805,
+          "latency_ms_p95": 29.343331325799227,
+          "latency_ms_p99": 41.45578593015671,
+          "legacy_success": true
+        },
+        {
+          "seed": 10001,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 546,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.035999999998076,
+          "wall_seconds": 3.5859200628474355,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 40
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 17
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 5
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 18
+            }
+          ],
+          "latency_ms_p50": 0.007922295480966568,
+          "latency_ms_p95": 28.737182030454278,
+          "latency_ms_p99": 29.9520079512149,
+          "legacy_success": true
+        },
+        {
+          "seed": 10002,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 563,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 37.15799999999945,
+          "wall_seconds": 4.158120492473245,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 57
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 25
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 9
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 23
+            }
+          ],
+          "latency_ms_p50": 0.007829628884792328,
+          "latency_ms_p95": 28.753937501460314,
+          "latency_ms_p99": 30.70851923897862,
+          "legacy_success": true
+        },
+        {
+          "seed": 10003,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 559,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.893999999999124,
+          "wall_seconds": 3.9639908568933606,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 53
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 21
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 5
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 27
+            }
+          ],
+          "latency_ms_p50": 0.007913447916507721,
+          "latency_ms_p95": 28.747437428683043,
+          "latency_ms_p99": 30.629584323614818,
+          "legacy_success": true
+        },
+        {
+          "seed": 10004,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 554,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.56399999999872,
+          "wall_seconds": 3.8450219118967652,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 48
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 23
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 20
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 5
+            }
+          ],
+          "latency_ms_p50": 0.00788085162639618,
+          "latency_ms_p95": 28.866012766957283,
+          "latency_ms_p99": 30.96323689445855,
+          "legacy_success": true
+        },
+        {
+          "seed": 10005,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 546,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.035999999998076,
+          "wall_seconds": 3.6234187493100762,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 40
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 5
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 11
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 24
+            }
+          ],
+          "latency_ms_p50": 0.007889233529567719,
+          "latency_ms_p95": 28.768783435225487,
+          "latency_ms_p99": 30.779784312471666,
+          "legacy_success": true
+        },
+        {
+          "seed": 10006,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 543,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 35.837999999997834,
+          "wall_seconds": 3.5253035593777895,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 37
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 11
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 21
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 5
+            }
+          ],
+          "latency_ms_p50": 0.00779423862695694,
+          "latency_ms_p95": 28.80906267091632,
+          "latency_ms_p99": 29.793816916644573,
+          "legacy_success": true
+        },
+        {
+          "seed": 10007,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 583,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 38.47800000000106,
+          "wall_seconds": 4.727398601360619,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 77
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 25
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 30
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 22
+            }
+          ],
+          "latency_ms_p50": 0.007844530045986176,
+          "latency_ms_p95": 28.84778007864952,
+          "latency_ms_p99": 30.193922929465757,
+          "legacy_success": true
+        },
+        {
+          "seed": 10008,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 558,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.827999999999044,
+          "wall_seconds": 4.0117630911991,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 52
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 23
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 24
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 5
+            }
+          ],
+          "latency_ms_p50": 0.007922295480966568,
+          "latency_ms_p95": 28.900733543559905,
+          "latency_ms_p99": 30.438539404422034,
+          "legacy_success": true
+        },
+        {
+          "seed": 10009,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 533,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 35.17799999999703,
+          "wall_seconds": 3.263274903409183,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 27
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 8
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 5
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 14
+            }
+          ],
+          "latency_ms_p50": 0.007747672498226166,
+          "latency_ms_p95": 28.493594750761986,
+          "latency_ms_p99": 30.066989436745626,
+          "legacy_success": true
+        },
+        {
+          "seed": 10010,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 539,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 35.57399999999751,
+          "wall_seconds": 3.352945927530527,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 33
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 6
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 6
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 21
+            }
+          ],
+          "latency_ms_p50": 0.007703900337219238,
+          "latency_ms_p95": 28.675919491797686,
+          "latency_ms_p99": 28.988438062369823,
+          "legacy_success": true
+        },
+        {
+          "seed": 10011,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 560,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.959999999999205,
+          "wall_seconds": 4.0276434207335114,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 54
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 16
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 8
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 30
+            }
+          ],
+          "latency_ms_p50": 0.007793772965669632,
+          "latency_ms_p95": 28.655068669468164,
+          "latency_ms_p99": 29.90538704209029,
+          "legacy_success": true
+        },
+        {
+          "seed": 10012,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 543,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 35.837999999997834,
+          "wall_seconds": 3.515906296670437,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 37
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 5
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 25
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 7
+            }
+          ],
+          "latency_ms_p50": 0.00792182981967926,
+          "latency_ms_p95": 28.756588976830244,
+          "latency_ms_p99": 30.622094236314304,
+          "legacy_success": true
+        },
+        {
+          "seed": 10013,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 540,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 35.63999999999759,
+          "wall_seconds": 3.412334945052862,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 34
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 7
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 13
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 14
+            }
+          ],
+          "latency_ms_p50": 0.007932540029287338,
+          "latency_ms_p95": 28.812894830480218,
+          "latency_ms_p99": 29.376114048063755,
+          "legacy_success": true
+        },
+        {
+          "seed": 10014,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 567,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 37.42199999999977,
+          "wall_seconds": 4.287528390996158,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 61
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 15
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 35
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 11
+            }
+          ],
+          "latency_ms_p50": 0.0079423189163208,
+          "latency_ms_p95": 28.84286381304264,
+          "latency_ms_p99": 29.438954051584023,
+          "legacy_success": true
+        },
+        {
+          "seed": 10015,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 554,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 36.56399999999872,
+          "wall_seconds": 3.903265494853258,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 48
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 7
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 26
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 15
+            }
+          ],
+          "latency_ms_p50": 0.007899943739175797,
+          "latency_ms_p95": 28.767634881660342,
+          "latency_ms_p99": 29.797627311199918,
+          "legacy_success": true
+        },
+        {
+          "seed": 10016,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 564,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 37.22399999999953,
+          "wall_seconds": 4.181753256358206,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 58
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 5
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 38
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 15
+            }
+          ],
+          "latency_ms_p50": 0.007863156497478485,
+          "latency_ms_p95": 28.807643754407763,
+          "latency_ms_p99": 29.70668282359839,
+          "legacy_success": true
+        },
+        {
+          "seed": 10017,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 574,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 37.884000000000334,
+          "wall_seconds": 4.204944137483835,
+          "reason": "success",
+          "retries": 1,
+          "handovers": 8,
+          "controllers": {
+            "ik": 528,
+            "world_model_mpc": 46
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 24
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_unexpected_contact",
+              "contacts": [
+                "fixed_jaw_pad_1:block_yellow_geom"
+              ]
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 14
+            },
+            {
+              "material": "green",
+              "attempt": 1,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 6
+            }
+          ],
+          "latency_ms_p50": 0.007821712642908096,
+          "latency_ms_p95": 28.78470690920949,
+          "latency_ms_p99": 117.45703849009577,
+          "legacy_success": true
+        },
+        {
+          "seed": 10018,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 533,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 35.17799999999703,
+          "wall_seconds": 3.2976019429042935,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 27
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 6
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 11
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 10
+            }
+          ],
+          "latency_ms_p50": 0.00788085162639618,
+          "latency_ms_p95": 28.758814185857773,
+          "latency_ms_p99": 29.1017372906208,
+          "legacy_success": true
+        },
+        {
+          "seed": 10019,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 539,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 35.57399999999751,
+          "wall_seconds": 3.4301484180614352,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 6,
+          "controllers": {
+            "ik": 506,
+            "world_model_mpc": 33
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "event": "mpc_handover",
+              "steps": 14
+            },
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "event": "mpc_handover",
+              "steps": 13
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "yellow",
+              "event": "mpc_handover",
+              "steps": 6
+            }
+          ],
+          "latency_ms_p50": 0.007633119821548462,
+          "latency_ms_p95": 28.296508267521858,
+          "latency_ms_p99": 28.98425923660398,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 1.0,
+      "single_item_success_rate": 1.0,
+      "mean_retries": 0.05,
+      "wrong_sort_rate": 0.0,
+      "mean_sim_seconds": 36.47159999999862,
+      "versions": {
+        "mujoco": "3.17.0",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "torch": "2.9.1",
+        "torchvision": "0.24.1",
+        "lerobot": "0.6.1",
+        "transformers": "5.5.4",
+        "gymnasium": "1.4.0",
+        "stable-baselines3": "2.9.2"
+      },
+      "gpu": 0,
+      "control_dt": 0.066,
+      "checkpoint": "outputs/world_model/round_0.pt",
+      "capability": "sorting"
+    },
+    "act": {
+      "policy": "act",
+      "task": "pickplace_compat",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 110,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.2599999999994225,
+          "wall_seconds": 1.2221035342663527,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 110
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.8609981052577496,
+          "latency_ms_p95": 10.671162093058227,
+          "latency_ms_p99": 12.01055748388171,
+          "legacy_success": true
+        },
+        {
+          "seed": 10001,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 107,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.061999999999444,
+          "wall_seconds": 0.47011170629411936,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 107
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.8035564571619034,
+          "latency_ms_p95": 10.19185520708561,
+          "latency_ms_p99": 10.223821513354778,
+          "legacy_success": true
+        },
+        {
+          "seed": 10002,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 111,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.325999999999415,
+          "wall_seconds": 0.4661630094051361,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 111
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7984863370656967,
+          "latency_ms_p95": 10.325805749744177,
+          "latency_ms_p99": 10.641133133322002,
+          "legacy_success": true
+        },
+        {
+          "seed": 10003,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 107,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.061999999999444,
+          "wall_seconds": 0.4479577811434865,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 107
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.790795475244522,
+          "latency_ms_p95": 10.184512659907341,
+          "latency_ms_p99": 10.253930427134035,
+          "legacy_success": true
+        },
+        {
+          "seed": 10004,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 0.461164933629334,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7918683588504791,
+          "latency_ms_p95": 10.164060443639755,
+          "latency_ms_p99": 10.687196850776672,
+          "legacy_success": true
+        },
+        {
+          "seed": 10005,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 107,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.061999999999444,
+          "wall_seconds": 0.4443783452734351,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 107
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7671044915914536,
+          "latency_ms_p95": 10.15173327177763,
+          "latency_ms_p99": 10.264421589672565,
+          "legacy_success": true
+        },
+        {
+          "seed": 10006,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 106,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 6.9959999999994515,
+          "wall_seconds": 0.4462224245071411,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 106
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.77413085475564,
+          "latency_ms_p95": 10.167070431634784,
+          "latency_ms_p99": 10.351551603525877,
+          "legacy_success": true
+        },
+        {
+          "seed": 10007,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 108,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.127999999999437,
+          "wall_seconds": 0.4546026811003685,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 108
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7825798131525517,
+          "latency_ms_p95": 10.178911965340376,
+          "latency_ms_p99": 10.22088611498475,
+          "legacy_success": true
+        },
+        {
+          "seed": 10008,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 108,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.127999999999437,
+          "wall_seconds": 0.46421173121780157,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 108
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7747320234775543,
+          "latency_ms_p95": 10.152651695534587,
+          "latency_ms_p99": 10.448035746812819,
+          "legacy_success": true
+        },
+        {
+          "seed": 10009,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 111,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.325999999999415,
+          "wall_seconds": 0.46185864694416523,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 111
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.787569373846054,
+          "latency_ms_p95": 10.171595495194197,
+          "latency_ms_p99": 10.428873077034952,
+          "legacy_success": true
+        },
+        {
+          "seed": 10010,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 105,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 6.929999999999459,
+          "wall_seconds": 0.4369289241731167,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 105
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7745895311236382,
+          "latency_ms_p95": 10.15841942280531,
+          "latency_ms_p99": 10.19735123962164,
+          "legacy_success": true
+        },
+        {
+          "seed": 10011,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 108,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.127999999999437,
+          "wall_seconds": 0.45596642047166824,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 108
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7800191417336464,
+          "latency_ms_p95": 10.162778059020638,
+          "latency_ms_p99": 10.34320523031056,
+          "legacy_success": true
+        },
+        {
+          "seed": 10012,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 107,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.061999999999444,
+          "wall_seconds": 0.4504814092069864,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 107
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7721951007843018,
+          "latency_ms_p95": 10.164974629878998,
+          "latency_ms_p99": 10.44936655089259,
+          "legacy_success": true
+        },
+        {
+          "seed": 10013,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 111,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.325999999999415,
+          "wall_seconds": 0.4687429843470454,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 111
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7837053164839745,
+          "latency_ms_p95": 10.17207046970725,
+          "latency_ms_p99": 10.605489835143091,
+          "legacy_success": true
+        },
+        {
+          "seed": 10014,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 106,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 6.9959999999994515,
+          "wall_seconds": 0.44258291833102703,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 106
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7691655084490776,
+          "latency_ms_p95": 10.090580442920327,
+          "latency_ms_p99": 10.182170290499926,
+          "legacy_success": true
+        },
+        {
+          "seed": 10015,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 110,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.2599999999994225,
+          "wall_seconds": 0.45854896400123835,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 110
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7680125311017036,
+          "latency_ms_p95": 10.095670307055116,
+          "latency_ms_p99": 10.258392598479986,
+          "legacy_success": true
+        },
+        {
+          "seed": 10016,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 107,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.061999999999444,
+          "wall_seconds": 0.4480486363172531,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 107
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7765732482075691,
+          "latency_ms_p95": 10.113155283033848,
+          "latency_ms_p99": 10.15887962654233,
+          "legacy_success": true
+        },
+        {
+          "seed": 10017,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 111,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.325999999999415,
+          "wall_seconds": 0.45672393031418324,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 111
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7658313736319542,
+          "latency_ms_p95": 10.078268125653267,
+          "latency_ms_p99": 10.136657021939754,
+          "legacy_success": true
+        },
+        {
+          "seed": 10018,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 0.4595887325704098,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7782142385840416,
+          "latency_ms_p95": 10.150864906609058,
+          "latency_ms_p99": 10.699079521000385,
+          "legacy_success": true
+        },
+        {
+          "seed": 10019,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 108,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.127999999999437,
+          "wall_seconds": 0.4548719534650445,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 108
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7814422026276588,
+          "latency_ms_p95": 10.206633433699608,
+          "latency_ms_p99": 10.497783785685895,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 1.0,
+      "single_item_success_rate": 1.0,
+      "mean_retries": 0.0,
+      "versions": {
+        "mujoco": "3.17.0",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "torch": "2.9.1",
+        "torchvision": "0.24.1",
+        "lerobot": "0.6.1",
+        "transformers": "5.5.4",
+        "gymnasium": "1.4.0",
+        "stable-baselines3": "2.9.2"
+      },
+      "gpu": 0,
+      "control_dt": 0.066,
+      "checkpoint": "ahmedsohail2003/act-so101-pickplace-dr@fb128aa2f37a31324d2651bf3b8745717771a157",
+      "capability": "pickplace_pretrained; sorting is transfer-only"
+    },
+    "vla": {
+      "policy": "vla",
+      "task": "pickplace_compat",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 176,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 11.616000000000549,
+          "wall_seconds": 2.8722652113065124,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 176
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.9277784526348114,
+          "latency_ms_p95": 5.415281048044562,
+          "latency_ms_p99": 235.62067840248346,
+          "legacy_success": true
+        },
+        {
+          "seed": 10001,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 110,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.2599999999994225,
+          "wall_seconds": 1.271549097262323,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 110
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.774740733206272,
+          "latency_ms_p95": 4.137512296438217,
+          "latency_ms_p99": 217.80992893502116,
+          "legacy_success": true
+        },
+        {
+          "seed": 10002,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 1.2411171337589622,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7748226895928383,
+          "latency_ms_p95": 4.270085133612154,
+          "latency_ms_p99": 217.0982889831066,
+          "legacy_success": true
+        },
+        {
+          "seed": 10003,
+          "success": false,
+          "placed": {
+            "red": false
+          },
+          "steps": 240,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 15.84000000000196,
+          "wall_seconds": 2.573009011335671,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 240
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7770806811749935,
+          "latency_ms_p95": 3.9739586412906642,
+          "latency_ms_p99": 214.0066766645759,
+          "legacy_success": false
+        },
+        {
+          "seed": 10004,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 174,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 11.484000000000504,
+          "wall_seconds": 1.8278821595013142,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 174
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.776213154196739,
+          "latency_ms_p95": 4.286059178411961,
+          "latency_ms_p99": 214.410549281165,
+          "legacy_success": true
+        },
+        {
+          "seed": 10005,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 1.2503262180835009,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7854695692658424,
+          "latency_ms_p95": 4.2946577072143555,
+          "latency_ms_p99": 214.91531912237406,
+          "legacy_success": true
+        },
+        {
+          "seed": 10006,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 108,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.127999999999437,
+          "wall_seconds": 1.2311343029141426,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 108
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.764885012060404,
+          "latency_ms_p95": 4.081025905907153,
+          "latency_ms_p99": 214.2871034797281,
+          "legacy_success": true
+        },
+        {
+          "seed": 10007,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 108,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.127999999999437,
+          "wall_seconds": 1.2313261227682233,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 108
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.765807021409273,
+          "latency_ms_p95": 4.16917586699128,
+          "latency_ms_p99": 213.49541807547212,
+          "legacy_success": true
+        },
+        {
+          "seed": 10008,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 236,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 15.576000000001871,
+          "wall_seconds": 2.3723175767809153,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 236
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7710461765527725,
+          "latency_ms_p95": 4.2184763588011265,
+          "latency_ms_p99": 214.4530024845153,
+          "legacy_success": true
+        },
+        {
+          "seed": 10009,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 1.2447763439267874,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7667565047740936,
+          "latency_ms_p95": 4.211488552391529,
+          "latency_ms_p99": 216.98407687246802,
+          "legacy_success": true
+        },
+        {
+          "seed": 10010,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 107,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.061999999999444,
+          "wall_seconds": 1.223336797207594,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 107
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.778364509344101,
+          "latency_ms_p95": 4.103470407426357,
+          "latency_ms_p99": 213.57511155307293,
+          "legacy_success": true
+        },
+        {
+          "seed": 10011,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 172,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 11.35200000000046,
+          "wall_seconds": 1.7944198222830892,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 172
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.770335577428341,
+          "latency_ms_p95": 4.144243849441409,
+          "latency_ms_p99": 212.42248718626797,
+          "legacy_success": true
+        },
+        {
+          "seed": 10012,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 172,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 11.35200000000046,
+          "wall_seconds": 1.7958650114014745,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 172
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.773501142859459,
+          "latency_ms_p95": 4.092060122638941,
+          "latency_ms_p99": 212.7987381443381,
+          "legacy_success": true
+        },
+        {
+          "seed": 10013,
+          "success": false,
+          "placed": {
+            "red": false
+          },
+          "steps": 240,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 15.84000000000196,
+          "wall_seconds": 2.374352252110839,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 240
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.764228895306587,
+          "latency_ms_p95": 3.975482378154993,
+          "latency_ms_p99": 213.1153375376016,
+          "legacy_success": false
+        },
+        {
+          "seed": 10014,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 1.236820456571877,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7612225860357285,
+          "latency_ms_p95": 3.9571946486830707,
+          "latency_ms_p99": 214.92611054331064,
+          "legacy_success": true
+        },
+        {
+          "seed": 10015,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 110,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.2599999999994225,
+          "wall_seconds": 1.2489085868000984,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 110
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.776641096919775,
+          "latency_ms_p95": 4.169268859550357,
+          "latency_ms_p99": 214.94605511426926,
+          "legacy_success": true
+        },
+        {
+          "seed": 10016,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 1.235795645043254,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7698475643992424,
+          "latency_ms_p95": 4.049697145819664,
+          "latency_ms_p99": 213.35175443440676,
+          "legacy_success": true
+        },
+        {
+          "seed": 10017,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 109,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.19399999999943,
+          "wall_seconds": 1.2277915738523006,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 109
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.7555191665887833,
+          "latency_ms_p95": 3.9750438183546066,
+          "latency_ms_p99": 212.89380609989166,
+          "legacy_success": true
+        },
+        {
+          "seed": 10018,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 110,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.2599999999994225,
+          "wall_seconds": 1.2308263927698135,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 110
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.771137911826372,
+          "latency_ms_p95": 4.000493790954351,
+          "latency_ms_p99": 211.27450958825648,
+          "legacy_success": true
+        },
+        {
+          "seed": 10019,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 108,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.127999999999437,
+          "wall_seconds": 1.2289557475596666,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 108
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.773399628698826,
+          "latency_ms_p95": 4.13383743725717,
+          "latency_ms_p99": 211.86710566282272,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 0.9,
+      "single_item_success_rate": 0.9,
+      "mean_retries": 0.0,
+      "versions": {
+        "mujoco": "3.17.0",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "torch": "2.9.1",
+        "torchvision": "0.24.1",
+        "lerobot": "0.6.1",
+        "transformers": "5.5.4",
+        "gymnasium": "1.4.0",
+        "stable-baselines3": "2.9.2"
+      },
+      "gpu": 0,
+      "control_dt": 0.066,
+      "checkpoint": "ahmedsohail2003/smolvla-so101-pickplace-v2@f43f9f3a1c81b050f9747919c53019fcae2caec0",
+      "capability": "pickplace_pretrained; sorting is transfer-only"
+    },
+    "rl_reach": {
+      "success_rate": 0.0,
+      "episodes": [
+        {
+          "seed": 50000,
+          "success": false,
+          "steps": 100,
+          "return": -9.174461384649078,
+          "distance": 0.12112744583943216
+        },
+        {
+          "seed": 50001,
+          "success": false,
+          "steps": 100,
+          "return": -5.224800676814559,
+          "distance": 0.06360167549095626
+        },
+        {
+          "seed": 50002,
+          "success": false,
+          "steps": 100,
+          "return": -7.003031151196862,
+          "distance": 0.10895091409930897
+        },
+        {
+          "seed": 50003,
+          "success": false,
+          "steps": 100,
+          "return": -8.91950214371479,
+          "distance": 0.10521290902746187
+        },
+        {
+          "seed": 50004,
+          "success": false,
+          "steps": 100,
+          "return": -9.687634219780396,
+          "distance": 0.10827338930851044
+        }
+      ],
+      "task": "reach",
+      "algo": "sac",
+      "seed": 0,
+      "requested_steps": 4096,
+      "actual_steps": 4096,
+      "parameters_updated": true,
+      "restored_actions_equal": true,
+      "training_seconds": 69.74109347164631,
+      "device": "cuda"
+    },
+    "rl_lift": {
+      "success_rate": 0.0,
+      "episodes": [
+        {
+          "seed": 50000,
+          "success": false,
+          "steps": 150,
+          "return": 12.903378706747011,
+          "distance": 0.14626846556756876
+        },
+        {
+          "seed": 50001,
+          "success": false,
+          "steps": 150,
+          "return": 9.012376113433527,
+          "distance": 0.17049395294272782
+        },
+        {
+          "seed": 50002,
+          "success": false,
+          "steps": 150,
+          "return": 13.157187442774948,
+          "distance": 0.17041538056537195
+        },
+        {
+          "seed": 50003,
+          "success": false,
+          "steps": 150,
+          "return": 15.20021350969839,
+          "distance": 0.14876854068536371
+        },
+        {
+          "seed": 50004,
+          "success": false,
+          "steps": 150,
+          "return": 8.170794939992893,
+          "distance": 0.17025033253065552
+        }
+      ],
+      "task": "lift",
+      "algo": "sac",
+      "seed": 0,
+      "requested_steps": 4096,
+      "actual_steps": 4096,
+      "parameters_updated": true,
+      "restored_actions_equal": true,
+      "training_seconds": 73.58426774572581,
+      "device": "cuda"
+    },
+    "world_model": {
+      "evaluation": {
+        "success_rate": 1.0,
+        "episodes": [
+          {
+            "seed": 50000,
+            "success": true,
+            "steps": 15,
+            "return": 0.19839612047119426,
+            "distance": 0.019701620566995273
+          },
+          {
+            "seed": 50001,
+            "success": true,
+            "steps": 7,
+            "return": 0.653358025342544,
+            "distance": 0.014954633916238325
+          },
+          {
+            "seed": 50002,
+            "success": true,
+            "steps": 1,
+            "return": 0.9802799068477661,
+            "distance": 0.018009818038651326
+          },
+          {
+            "seed": 50003,
+            "success": true,
+            "steps": 10,
+            "return": 0.4363934256454177,
+            "distance": 0.01636127226975857
+          },
+          {
+            "seed": 50004,
+            "success": true,
+            "steps": 5,
+            "return": 0.8011402438029883,
+            "distance": 0.016152087512455837
+          },
+          {
+            "seed": 50005,
+            "success": true,
+            "steps": 14,
+            "return": -0.13135072329923214,
+            "distance": 0.017825031238754268
+          },
+          {
+            "seed": 50006,
+            "success": true,
+            "steps": 21,
+            "return": 0.16897706148197145,
+            "distance": 0.019322001434694265
+          },
+          {
+            "seed": 50007,
+            "success": true,
+            "steps": 13,
+            "return": -0.023321589662912978,
+            "distance": 0.01567557787685687
+          },
+          {
+            "seed": 50008,
+            "success": true,
+            "steps": 12,
+            "return": 0.1952241423361455,
+            "distance": 0.016712321866032904
+          },
+          {
+            "seed": 50009,
+            "success": true,
+            "steps": 36,
+            "return": -1.224258583085327,
+            "distance": 0.01951923994156348
+          },
+          {
+            "seed": 50010,
+            "success": true,
+            "steps": 5,
+            "return": 0.8221000590668464,
+            "distance": 0.018416074108022283
+          },
+          {
+            "seed": 50011,
+            "success": true,
+            "steps": 5,
+            "return": 0.8440557661620571,
+            "distance": 0.014177504061210332
+          },
+          {
+            "seed": 50012,
+            "success": true,
+            "steps": 40,
+            "return": -1.5612462616399974,
+            "distance": 0.018199746317773827
+          },
+          {
+            "seed": 50013,
+            "success": true,
+            "steps": 2,
+            "return": 0.9489130926450629,
+            "distance": 0.01835489511936262
+          },
+          {
+            "seed": 50014,
+            "success": true,
+            "steps": 9,
+            "return": 0.5200971472501564,
+            "distance": 0.017853818860415285
+          },
+          {
+            "seed": 50015,
+            "success": true,
+            "steps": 29,
+            "return": -0.6595518393018907,
+            "distance": 0.018764129360280976
+          },
+          {
+            "seed": 50016,
+            "success": true,
+            "steps": 8,
+            "return": 0.5535948945818363,
+            "distance": 0.013540617257729561
+          },
+          {
+            "seed": 50017,
+            "success": true,
+            "steps": 11,
+            "return": 0.3090390039702168,
+            "distance": 0.017507950766517438
+          },
+          {
+            "seed": 50018,
+            "success": true,
+            "steps": 12,
+            "return": 0.2093441915701404,
+            "distance": 0.01655173862727372
+          },
+          {
+            "seed": 50019,
+            "success": true,
+            "steps": 15,
+            "return": -0.027045441208370935,
+            "distance": 0.014158118776554885
+          }
+        ],
+        "transitions": 8000,
+        "planner_fix": "freeze_jaw"
+      },
+      "training": {
+        "seed": 0,
+        "device": "cuda",
+        "history": [
+          {
+            "success_rate": 1.0,
+            "episodes": [
+              {
+                "seed": 50000,
+                "success": true,
+                "steps": 15,
+                "return": 0.19839612047119426,
+                "distance": 0.019701620566995273
+              },
+              {
+                "seed": 50001,
+                "success": true,
+                "steps": 7,
+                "return": 0.653358025342544,
+                "distance": 0.014954633916238325
+              },
+              {
+                "seed": 50002,
+                "success": true,
+                "steps": 1,
+                "return": 0.9802799068477661,
+                "distance": 0.018009818038651326
+              },
+              {
+                "seed": 50003,
+                "success": true,
+                "steps": 10,
+                "return": 0.4363934256454177,
+                "distance": 0.01636127226975857
+              },
+              {
+                "seed": 50004,
+                "success": true,
+                "steps": 5,
+                "return": 0.8011402438029883,
+                "distance": 0.016152087512455837
+              },
+              {
+                "seed": 50005,
+                "success": true,
+                "steps": 14,
+                "return": -0.13135072329923214,
+                "distance": 0.017825031238754268
+              },
+              {
+                "seed": 50006,
+                "success": true,
+                "steps": 21,
+                "return": 0.16897706148197145,
+                "distance": 0.019322001434694265
+              },
+              {
+                "seed": 50007,
+                "success": true,
+                "steps": 13,
+                "return": -0.023321589662912978,
+                "distance": 0.01567557787685687
+              },
+              {
+                "seed": 50008,
+                "success": true,
+                "steps": 12,
+                "return": 0.1952241423361455,
+                "distance": 0.016712321866032904
+              },
+              {
+                "seed": 50009,
+                "success": true,
+                "steps": 36,
+                "return": -1.224258583085327,
+                "distance": 0.01951923994156348
+              },
+              {
+                "seed": 50010,
+                "success": true,
+                "steps": 5,
+                "return": 0.8221000590668464,
+                "distance": 0.018416074108022283
+              },
+              {
+                "seed": 50011,
+                "success": true,
+                "steps": 5,
+                "return": 0.8440557661620571,
+                "distance": 0.014177504061210332
+              },
+              {
+                "seed": 50012,
+                "success": true,
+                "steps": 40,
+                "return": -1.5612462616399974,
+                "distance": 0.018199746317773827
+              },
+              {
+                "seed": 50013,
+                "success": true,
+                "steps": 2,
+                "return": 0.9489130926450629,
+                "distance": 0.01835489511936262
+              },
+              {
+                "seed": 50014,
+                "success": true,
+                "steps": 9,
+                "return": 0.5200971472501564,
+                "distance": 0.017853818860415285
+              },
+              {
+                "seed": 50015,
+                "success": true,
+                "steps": 29,
+                "return": -0.6595518393018907,
+                "distance": 0.018764129360280976
+              },
+              {
+                "seed": 50016,
+                "success": true,
+                "steps": 8,
+                "return": 0.5535948945818363,
+                "distance": 0.013540617257729561
+              },
+              {
+                "seed": 50017,
+                "success": true,
+                "steps": 11,
+                "return": 0.3090390039702168,
+                "distance": 0.017507950766517438
+              },
+              {
+                "seed": 50018,
+                "success": true,
+                "steps": 12,
+                "return": 0.2093441915701404,
+                "distance": 0.01655173862727372
+              },
+              {
+                "seed": 50019,
+                "success": true,
+                "steps": 15,
+                "return": -0.027045441208370935,
+                "distance": 0.014158118776554885
+              }
+            ],
+            "transitions": 8000,
+            "planner_fix": "freeze_jaw",
+            "round": 0,
+            "fit_loss": 0.12001048773527145
+          }
+        ],
+        "selected_checkpoint": "round_0.pt",
+        "training_transitions": 8000,
+        "diagnostic_extra_transitions": 3000,
+        "max_training_interactions": 16000,
+        "note": "After collecting 3000 additional diagnostic transitions, fixed the frozen-jaw planner input; selected and re-evaluated the original 8000-transition checkpoint without further training."
+      },
+      "checkpoint_sha256": "65e479fc7862360bea29b8bc18d2686610b783d0bd7a73cc2589d9058a34c857"
+    },
+    "dataset": {
+      "episodes": 10,
+      "frames": 1280,
+      "sample_keys": [
+        "action",
+        "episode_index",
+        "frame_index",
+        "index",
+        "observation.images.front",
+        "observation.images.wrist",
+        "observation.state",
+        "task",
+        "task_index",
+        "timestamp"
+      ],
+      "task": "pickplace_compat",
+      "image_shape": [
+        3,
+        224,
+        224
+      ],
+      "actual_control_dt": 0.066,
+      "nominal_dataset_fps": 15
+    }
+  },
+  "transfer": {
+    "act": {
+      "policy": "act",
+      "task": "sorting",
+      "episodes": [
+        {
+          "seed": 10100,
+          "success": false,
+          "placed": {
+            "red": true,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 5.688403200358152,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7957580275833607,
+          "latency_ms_p95": 10.487172147259116,
+          "latency_ms_p99": 10.785095682367682,
+          "legacy_success": true
+        },
+        {
+          "seed": 10101,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 4.006337883882225,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7666025087237358,
+          "latency_ms_p95": 10.163764748722313,
+          "latency_ms_p99": 10.585722774267197,
+          "legacy_success": false
+        },
+        {
+          "seed": 10102,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 3.9630365753546357,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7543812282383442,
+          "latency_ms_p95": 9.997473005205393,
+          "latency_ms_p99": 10.472111646085978,
+          "legacy_success": false
+        },
+        {
+          "seed": 10103,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 3.967412544414401,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7519551329314709,
+          "latency_ms_p95": 9.962767269462347,
+          "latency_ms_p99": 10.083434842526911,
+          "legacy_success": false
+        },
+        {
+          "seed": 10104,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": true
+          },
+          "wrong_sort_count": 1,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 3.980334776453674,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 1.7535164952278137,
+          "latency_ms_p95": 9.980132523924112,
+          "latency_ms_p99": 10.196099551394582,
+          "legacy_success": false
+        }
+      ],
+      "success_rate": 0.0,
+      "single_item_success_rate": 0.06666666666666667,
+      "mean_retries": 0.0,
+      "wrong_sort_rate": 0.06666666666666667,
+      "mean_sim_seconds": 59.40000000002662,
+      "versions": {
+        "mujoco": "3.17.0",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "torch": "2.9.1",
+        "torchvision": "0.24.1",
+        "lerobot": "0.6.1",
+        "transformers": "5.5.4",
+        "gymnasium": "1.4.0",
+        "stable-baselines3": "2.9.2"
+      },
+      "gpu": 0,
+      "control_dt": 0.066,
+      "checkpoint": "ahmedsohail2003/act-so101-pickplace-dr@fb128aa2f37a31324d2651bf3b8745717771a157",
+      "capability": "pickplace_pretrained; sorting is transfer-only"
+    },
+    "vla": {
+      "policy": "vla",
+      "task": "sorting",
+      "episodes": [
+        {
+          "seed": 10100,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 11.281012387946248,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.942708484828472,
+          "latency_ms_p95": 5.227390863001346,
+          "latency_ms_p99": 222.27078658528626,
+          "legacy_success": false
+        },
+        {
+          "seed": 10101,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 9.592377145774662,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.840613178908825,
+          "latency_ms_p95": 4.155067261308432,
+          "latency_ms_p99": 220.36935651674867,
+          "legacy_success": false
+        },
+        {
+          "seed": 10102,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 9.436679132282734,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.852040972560644,
+          "latency_ms_p95": 4.149022838100791,
+          "latency_ms_p99": 220.14841782860458,
+          "legacy_success": false
+        },
+        {
+          "seed": 10103,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 9.299871477298439,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.8330783136188984,
+          "latency_ms_p95": 4.018153063952923,
+          "latency_ms_p99": 219.98091583140194,
+          "legacy_success": false
+        },
+        {
+          "seed": 10104,
+          "success": false,
+          "placed": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "steps": 900,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 59.40000000002663,
+          "wall_seconds": 9.280791766941547,
+          "reason": "time_limit",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 900
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.8434513844549656,
+          "latency_ms_p95": 4.093167837709188,
+          "latency_ms_p99": 218.85127982124686,
+          "legacy_success": false
+        }
+      ],
+      "success_rate": 0.0,
+      "single_item_success_rate": 0.0,
+      "mean_retries": 0.0,
+      "wrong_sort_rate": 0.0,
+      "mean_sim_seconds": 59.40000000002662,
+      "versions": {
+        "mujoco": "3.17.0",
+        "numpy": "2.2.6",
+        "scipy": "1.18.1",
+        "torch": "2.9.1",
+        "torchvision": "0.24.1",
+        "lerobot": "0.6.1",
+        "transformers": "5.5.4",
+        "gymnasium": "1.4.0",
+        "stable-baselines3": "2.9.2"
+      },
+      "gpu": 0,
+      "control_dt": 0.066,
+      "checkpoint": "ahmedsohail2003/smolvla-so101-pickplace-v2@f43f9f3a1c81b050f9747919c53019fcae2caec0",
+      "capability": "pickplace_pretrained; sorting is transfer-only"
+    }
+  },
+  "upstream_baselines": {
+    "A": {
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              5.182025699285473e-05
+            ],
+            [
+              "descend",
+              1.706783822808445e-05
+            ],
+            [
+              "grasp",
+              1.706783822808445e-05
+            ],
+            [
+              "lift",
+              3.462187730088663e-05
+            ],
+            [
+              "transport",
+              3.888552564035154e-05
+            ],
+            [
+              "lower",
+              1.8796208094051696e-05
+            ],
+            [
+              "release",
+              1.8796208094051696e-05
+            ],
+            [
+              "retreat",
+              0.013677341405257188
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17837982280610765,
+            -0.1317925590111335,
+            0.01799994753282898
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              8.156196203717316e-05
+            ],
+            [
+              "descend",
+              1.557232127784919e-05
+            ],
+            [
+              "grasp",
+              1.557232127784919e-05
+            ],
+            [
+              "lift",
+              7.180200280553116e-05
+            ],
+            [
+              "transport",
+              3.136754094294914e-05
+            ],
+            [
+              "lower",
+              1.8197355615751106e-05
+            ],
+            [
+              "release",
+              1.8197355615751106e-05
+            ],
+            [
+              "retreat",
+              0.013844543750565382
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17913938861352607,
+            -0.13023434184158408,
+            0.01799994753282893
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              6.227958144789948e-06
+            ],
+            [
+              "descend",
+              1.5812347632915137e-05
+            ],
+            [
+              "grasp",
+              1.5812347632915137e-05
+            ],
+            [
+              "lift",
+              5.0449589039303646e-05
+            ],
+            [
+              "transport",
+              5.9060623544936625e-05
+            ],
+            [
+              "lower",
+              1.890123900054263e-05
+            ],
+            [
+              "release",
+              1.890123900054263e-05
+            ],
+            [
+              "retreat",
+              0.013658692034799216
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17805953607736494,
+            -0.13116812670713318,
+            0.01799994753282891
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              4.5694363627744363e-05
+            ],
+            [
+              "descend",
+              1.5502420926403286e-05
+            ],
+            [
+              "grasp",
+              1.5502420926403286e-05
+            ],
+            [
+              "lift",
+              7.043184852042191e-05
+            ],
+            [
+              "transport",
+              5.619498904012404e-05
+            ],
+            [
+              "lower",
+              1.8086380821506853e-05
+            ],
+            [
+              "release",
+              1.8086380821506853e-05
+            ],
+            [
+              "retreat",
+              0.013890416680480692
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17888642423568007,
+            -0.12990443289045628,
+            0.017999947532828922
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              3.188410659854303e-05
+            ],
+            [
+              "descend",
+              1.5070282865315013e-05
+            ],
+            [
+              "grasp",
+              1.5070282865315013e-05
+            ],
+            [
+              "lift",
+              3.135991728083069e-05
+            ],
+            [
+              "transport",
+              8.270836400600638e-05
+            ],
+            [
+              "lower",
+              1.8677885306704777e-05
+            ],
+            [
+              "release",
+              1.8677885306704777e-05
+            ],
+            [
+              "retreat",
+              0.013732409877157481
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17815311314000926,
+            -0.1299966343106642,
+            0.017999947532828915
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              3.0722397871061315e-05
+            ],
+            [
+              "descend",
+              2.8821204980902343e-05
+            ],
+            [
+              "grasp",
+              2.8821204980902343e-05
+            ],
+            [
+              "lift",
+              1.9132754714147872e-05
+            ],
+            [
+              "transport",
+              2.387209070473037e-05
+            ],
+            [
+              "lower",
+              1.895338710233642e-05
+            ],
+            [
+              "release",
+              1.895338710233642e-05
+            ],
+            [
+              "retreat",
+              0.013626921017418804
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17726443861756658,
+            -0.12968081049191507,
+            0.01799994753282892
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              3.12610371476811e-05
+            ],
+            [
+              "descend",
+              3.107229330912376e-05
+            ],
+            [
+              "grasp",
+              3.107229330912376e-05
+            ],
+            [
+              "lift",
+              1.797780446637692e-05
+            ],
+            [
+              "transport",
+              5.6552955669419214e-05
+            ],
+            [
+              "lower",
+              1.8746028748293622e-05
+            ],
+            [
+              "release",
+              1.8746028748293622e-05
+            ],
+            [
+              "retreat",
+              0.013700112646366898
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17807574091961356,
+            -0.12996778138673848,
+            0.01799994753282892
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              3.1551662759639504e-05
+            ],
+            [
+              "descend",
+              1.4983364726415621e-05
+            ],
+            [
+              "grasp",
+              1.4983364726415621e-05
+            ],
+            [
+              "lift",
+              3.385432134701393e-05
+            ],
+            [
+              "transport",
+              7.136728995306268e-05
+            ],
+            [
+              "lower",
+              1.893574832363092e-05
+            ],
+            [
+              "release",
+              1.893574832363092e-05
+            ],
+            [
+              "retreat",
+              0.013655531820965312
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17781579985870444,
+            -0.12988913009685873,
+            0.017999947532828926
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              1.7081767015172054e-05
+            ],
+            [
+              "descend",
+              1.6297420381861276e-05
+            ],
+            [
+              "grasp",
+              1.6297420381861276e-05
+            ],
+            [
+              "lift",
+              4.151196617549823e-05
+            ],
+            [
+              "transport",
+              4.5254422206407454e-05
+            ],
+            [
+              "lower",
+              1.8739100006657813e-05
+            ],
+            [
+              "release",
+              1.8739100006657813e-05
+            ],
+            [
+              "retreat",
+              0.013696333440844853
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.1783679921115049,
+            -0.13021879212585077,
+            0.01799994753282892
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              8.659465933251489e-05
+            ],
+            [
+              "descend",
+              1.6954797959550887e-05
+            ],
+            [
+              "grasp",
+              1.6954797959550887e-05
+            ],
+            [
+              "lift",
+              3.636818050019602e-05
+            ],
+            [
+              "transport",
+              9.023168383365956e-05
+            ],
+            [
+              "lower",
+              1.8720471610636262e-05
+            ],
+            [
+              "release",
+              1.8720471610636262e-05
+            ],
+            [
+              "retreat",
+              0.013724353509841546
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.1788463914513545,
+            -0.13035320041106094,
+            0.017999947532828936
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              2.3451766778333498e-05
+            ],
+            [
+              "descend",
+              3.274189329922673e-05
+            ],
+            [
+              "grasp",
+              3.274189329922673e-05
+            ],
+            [
+              "lift",
+              1.721357535460966e-05
+            ],
+            [
+              "transport",
+              7.531892274086008e-05
+            ],
+            [
+              "lower",
+              1.907854940148535e-05
+            ],
+            [
+              "release",
+              1.907854940148535e-05
+            ],
+            [
+              "retreat",
+              0.013618934890871027
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.18088303596833538,
+            -0.1328773867673793,
+            0.01799994753282893
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              6.939923036805386e-05
+            ],
+            [
+              "descend",
+              1.6401486224971077e-05
+            ],
+            [
+              "grasp",
+              1.6401486224971077e-05
+            ],
+            [
+              "lift",
+              4.1502539430840176e-05
+            ],
+            [
+              "transport",
+              3.3337003457786604e-05
+            ],
+            [
+              "lower",
+              1.8159292468858055e-05
+            ],
+            [
+              "release",
+              1.8159292468858055e-05
+            ],
+            [
+              "retreat",
+              0.013856859110166257
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.1789136558787095,
+            -0.12981575097412618,
+            0.017999947532828898
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              3.653919004439104e-05
+            ],
+            [
+              "descend",
+              3.84354269792131e-05
+            ],
+            [
+              "grasp",
+              3.84354269792131e-05
+            ],
+            [
+              "lift",
+              9.538177677612011e-05
+            ],
+            [
+              "transport",
+              4.4248176415970354e-05
+            ],
+            [
+              "lower",
+              1.9043646304399868e-05
+            ],
+            [
+              "release",
+              1.9043646304399868e-05
+            ],
+            [
+              "retreat",
+              0.013612721550551415
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17711590019232876,
+            -0.12928702185943367,
+            0.017999947532828922
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              6.992743253703269e-05
+            ],
+            [
+              "descend",
+              1.8343665265163708e-05
+            ],
+            [
+              "grasp",
+              1.8343665265163708e-05
+            ],
+            [
+              "lift",
+              3.0376777583624e-05
+            ],
+            [
+              "transport",
+              9.515488444591632e-05
+            ],
+            [
+              "lower",
+              1.8811070692534763e-05
+            ],
+            [
+              "release",
+              1.8811070692534763e-05
+            ],
+            [
+              "retreat",
+              0.013701737787273472
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17858441769867145,
+            -0.13030070110986947,
+            0.017999947532828974
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              2.7161801899219444e-05
+            ],
+            [
+              "descend",
+              2.8971919550189392e-05
+            ],
+            [
+              "grasp",
+              2.8971919550189392e-05
+            ],
+            [
+              "lift",
+              1.9033259645383114e-05
+            ],
+            [
+              "transport",
+              4.185101102081562e-05
+            ],
+            [
+              "lower",
+              1.8557571415418107e-05
+            ],
+            [
+              "release",
+              1.8557571415418107e-05
+            ],
+            [
+              "retreat",
+              0.013745503808625069
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17922779737180905,
+            -0.13012672367359257,
+            0.017999947532828926
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              7.499640206730053e-05
+            ],
+            [
+              "descend",
+              1.7653495500427088e-05
+            ],
+            [
+              "grasp",
+              1.7653495500427088e-05
+            ],
+            [
+              "lift",
+              3.205989853131898e-05
+            ],
+            [
+              "transport",
+              8.781342433614736e-05
+            ],
+            [
+              "lower",
+              1.900101911049461e-05
+            ],
+            [
+              "release",
+              1.900101911049461e-05
+            ],
+            [
+              "retreat",
+              0.013646115084970063
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17776753567963652,
+            -0.12984340338142097,
+            0.01799994753282893
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              3.787782924303585e-05
+            ],
+            [
+              "descend",
+              3.725727400898319e-05
+            ],
+            [
+              "grasp",
+              3.725727400898319e-05
+            ],
+            [
+              "lift",
+              9.749758540376525e-05
+            ],
+            [
+              "transport",
+              3.5485468201587326e-05
+            ],
+            [
+              "lower",
+              1.8951077607055963e-05
+            ],
+            [
+              "release",
+              1.8951077607055963e-05
+            ],
+            [
+              "retreat",
+              0.013633325746756806
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17823525159613535,
+            -0.13099099531181868,
+            0.017999947532828926
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              3.2253750828541726e-05
+            ],
+            [
+              "descend",
+              1.6044111638351904e-05
+            ],
+            [
+              "grasp",
+              1.6044111638351904e-05
+            ],
+            [
+              "lift",
+              4.4736915409876895e-05
+            ],
+            [
+              "transport",
+              7.105529074838764e-05
+            ],
+            [
+              "lower",
+              1.8924195452691128e-05
+            ],
+            [
+              "release",
+              1.8924195452691128e-05
+            ],
+            [
+              "retreat",
+              0.013658486684735231
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.1779058950468253,
+            -0.13001653276832048,
+            0.017999947532828905
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              8.283044925372277e-05
+            ],
+            [
+              "descend",
+              1.859457580660258e-05
+            ],
+            [
+              "grasp",
+              1.859457580660258e-05
+            ],
+            [
+              "lift",
+              2.948411914299729e-05
+            ],
+            [
+              "transport",
+              9.13119760398999e-05
+            ],
+            [
+              "lower",
+              1.9025097729496877e-05
+            ],
+            [
+              "release",
+              1.9025097729496877e-05
+            ],
+            [
+              "retreat",
+              0.013641382477970603
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17763980638900925,
+            -0.12980893465494753,
+            0.017999947532828926
+          ]
+        },
+        {
+          "success": true,
+          "n_steps": 111,
+          "seconds": 7.4,
+          "ik_errors": [
+            [
+              "hover",
+              2.3085033283515294e-05
+            ],
+            [
+              "descend",
+              1.5640349210773426e-05
+            ],
+            [
+              "grasp",
+              1.5640349210773426e-05
+            ],
+            [
+              "lift",
+              5.7895597353035886e-05
+            ],
+            [
+              "transport",
+              7.095099337581481e-05
+            ],
+            [
+              "lower",
+              1.8541197047562753e-05
+            ],
+            [
+              "release",
+              1.8541197047562753e-05
+            ],
+            [
+              "retreat",
+              0.013764957533008366
+            ]
+          ],
+          "retries": 0,
+          "block_final": [
+            -0.17893306564495867,
+            -0.1302026244448877,
+            0.017999947532828933
+          ]
+        }
+      ]
+    },
+    "C": {
+      "success_rate": 1.0,
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10001,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10002,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10003,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10004,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10005,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10006,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10007,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10008,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10009,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10010,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10011,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10012,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10013,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10014,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10015,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10016,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10017,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10018,
+          "success": true,
+          "reason": "executed"
+        },
+        {
+          "seed": 10019,
+          "success": true,
+          "reason": "executed"
+        }
+      ]
+    }
+  },
+  "models": {
+    "act": [
+      "ahmedsohail2003/act-so101-pickplace-dr",
+      "fb128aa2f37a31324d2651bf3b8745717771a157"
+    ],
+    "vla": [
+      "ahmedsohail2003/smolvla-so101-pickplace-v2",
+      "f43f9f3a1c81b050f9747919c53019fcae2caec0"
+    ],
+    "vlm": [
+      "HuggingFaceTB/SmolVLM2-500M-Video-Instruct",
+      "7b375e1b73b11138ff12fe22c8f2822d8fe03467"
+    ]
+  },
+  "upstream": {
+    "A": {
+      "repository": "https://github.com/ahmedsohail2003/workcell-partA-imitation",
+      "revision": "5822ac1dd508c92183fd8ecc99f91d6ec386549b"
+    },
+    "B": {
+      "repository": "https://github.com/ahmedsohail2003/workcell-partB-vla",
+      "revision": "afdd21b91872010b06995a9d730f62f4381c13a4"
+    },
+    "C": {
+      "repository": "https://github.com/ahmedsohail2003/workcell-partC-grasping",
+      "revision": "205065904cc5fdcc3ffddd505ffdf3b39210bd61"
+    },
+    "D": {
+      "repository": "https://github.com/ahmedsohail2003/workcell-partD-rl",
+      "revision": "dbe935a99c1c1b3f6565faabe87ca4bff40da010"
+    }
+  },
+  "versions": {
+    "mujoco": "3.17.0",
+    "numpy": "2.2.6",
+    "scipy": "1.18.1",
+    "torch": "2.9.1",
+    "torchvision": "0.24.1",
+    "lerobot": "0.6.1",
+    "transformers": "5.5.4",
+    "gymnasium": "1.4.0",
+    "stable-baselines3": "2.9.2"
+  },
+  "gpu": "single NVIDIA L40, physical GPU 0",
+  "scope": "M1 simulation regression set, one training seed; RL is a pipeline smoke test."
+}

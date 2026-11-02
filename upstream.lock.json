@@ -1,0 +1,18 @@
+{
+  "A": {
+    "repository": "https://github.com/ahmedsohail2003/workcell-partA-imitation",
+    "revision": "5822ac1dd508c92183fd8ecc99f91d6ec386549b"
+  },
+  "B": {
+    "repository": "https://github.com/ahmedsohail2003/workcell-partB-vla",
+    "revision": "afdd21b91872010b06995a9d730f62f4381c13a4"
+  },
+  "C": {
+    "repository": "https://github.com/ahmedsohail2003/workcell-partC-grasping",
+    "revision": "205065904cc5fdcc3ffddd505ffdf3b39210bd61"
+  },
+  "D": {
+    "repository": "https://github.com/ahmedsohail2003/workcell-partD-rl",
+    "revision": "dbe935a99c1c1b3f6565faabe87ca4bff40da010"
+  }
+}
