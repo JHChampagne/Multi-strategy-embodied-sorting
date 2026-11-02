@@ -14,13 +14,18 @@ def parser():
     p.add_argument("--gpu", type=int, default=0)
     sub = p.add_subparsers(dest="command", required=True)
     cal = sub.add_parser("calibrate")
-    cal.add_argument("--output", default="outputs/calibration.npz")
+    cal.add_argument("--output")
+    cal.add_argument("--task", choices=["sorting_basic", "sorting"], default="sorting_basic")
     ev = sub.add_parser("evaluate")
-    ev.add_argument("--policy", choices=["expert", "vision", "hybrid", "act", "vla"], required=True)
-    ev.add_argument("--task", choices=["sorting", "pickplace_compat"], default="sorting")
+    ev.add_argument("--policy", choices=["expert", "vision", "hybrid", "act", "vla"])
+    ev.add_argument("--base-policy", choices=["geometric", "act", "smolvla"])
+    ev.add_argument("--enhancer", choices=["none"], default="none")
+    ev.add_argument(
+        "--task", choices=["sorting_basic", "sorting", "pickplace_compat"], default="sorting_basic"
+    )
     ev.add_argument("--episodes", type=int, default=20)
-    ev.add_argument("--seed", type=int, default=10000)
-    ev.add_argument("--calibration", default="outputs/calibration.npz")
+    ev.add_argument("--seed", type=int)
+    ev.add_argument("--calibration")
     ev.add_argument("--checkpoint")
     ev.add_argument("--device", default="cuda")
     ev.add_argument("--output", required=True)
@@ -83,6 +88,38 @@ def evaluate(args):
     from .execution import Executor
     from .perception.calibrate import Calibration
     from .policies.geometric import GeometricPolicy
+
+    args.seed = args.seed if args.seed is not None else (20000 if args.task == "sorting_basic" else 10000)
+    args.calibration = args.calibration or (
+        "outputs/basic-calibration.npz" if args.task == "sorting_basic" else "outputs/calibration.npz"
+    )
+
+    if args.task == "sorting_basic":
+        from .policies.registry import make_base_policy
+
+        name = args.base_policy or {"vision": "geometric", "act": "act", "vla": "smolvla"}.get(
+            args.policy, "geometric"
+        )
+        if args.policy in {"expert", "hybrid"}:
+            raise ValueError(
+                "sorting_basic uses an independent base policy; expert/hybrid are legacy M1 modes (--task sorting)"
+            )
+        if args.base_policy and args.policy:
+            raise ValueError("Select only --base-policy or its legacy --policy alias")
+        policy = make_base_policy(name, args.checkpoint, args.device)
+        env = WorkstationEnv("sorting_basic", images=name != "geometric", max_steps=args.max_steps)
+        try:
+            calibration = Calibration.load(args.calibration)
+            return Executor(env, policy, calibration).run_many(
+                args.episodes, args.seed, args.output, args.video
+            )
+        finally:
+            env.close()
+    if args.base_policy and args.policy:
+        raise ValueError("Select only --base-policy or --policy")
+    args.policy = args.policy or {"geometric": "vision", "act": "act", "smolvla": "vla"}.get(
+        args.base_policy, "vision"
+    )
 
     out = Path(args.output)
     out.mkdir(parents=True, exist_ok=True)
@@ -191,7 +228,10 @@ def main():
         from .env import WorkstationEnv
         from .perception.calibrate import calibrate
 
-        env = WorkstationEnv()
+        args.output = args.output or (
+            "outputs/basic-calibration.npz" if args.task == "sorting_basic" else "outputs/calibration.npz"
+        )
+        env = WorkstationEnv(args.task)
         try:
             calibration = calibrate(env)
             Path(args.output).parent.mkdir(parents=True, exist_ok=True)

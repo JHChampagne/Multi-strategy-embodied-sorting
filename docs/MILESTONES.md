@@ -1,27 +1,32 @@
-# Milestones
+# 阶段里程碑
 
-| Stage | Deliverable | Exit condition |
+| 阶段 | 交付 | 边界 |
 | --- | --- | --- |
-| M1 | Unified simulation prototype and public repository | Acceptance report passes; real model evaluations, trained MPC and demo dataset exist |
-| M2 | ACT and SmolVLA trained for sorting | Balanced demonstrations; held-out sorting and instruction counterfactual evaluations |
-| M3 | RL / model-based skill study | Three training seeds, fixed environment-interaction budgets, Reach/Lift comparisons, validated skill handovers |
-| M4 | Engineering evidence and application portfolio | Perturbations, recovery, ablations, measured limits and interview-ready technical narrative |
+| M1，`v0.1.0-m1` 已归档 | 统一 MuJoCo 核心、三物料、公开 ACT/VLA 接入、Reach 世界模型、RL/数据管道 | 历史证据见 RESULTS.md，不覆盖七物料能力 |
+| 七物料基线，`v0.2.0-basic-sorting` | TaskManager、多实例、三落点、非特权几何分拣、自动重置、独立审计 | 当前阶段；ACT/VLA 仅适配接口，局部增强为 NoOp |
+| M2：学习策略分拣 | 平衡七物料示范、ACT 训练、SmolVLA 微调 | 同色目标/落点条件明确，验证语言改变目标，独立策略单独统计 |
+| M3：局部控制增强 | Residual SAC 与抓取短时世界模型/MPC | 从 approach/align/close 开始；有界修正、恢复、独立与组合消融 |
+| M4：工程展示 | 形状/光照/摩擦、偏差、被碰动、遮挡、失败案例与简历证据 | 扰动逐项加入，保留固定测试和失败分母；不冒充生产/真机部署 |
 
-M1 requires 20 sorting scenes each: expert >=90%, vision >=80%, hybrid >=70%.
-World-model Reach must achieve >=80% on 20 independent targets. ACT/VLA each
-require 20 real compatibility-task evaluations, with no M1 success threshold.
-SAC Reach and Lift each require >=4096 training interactions, five evaluations,
-changed parameters and checkpoint action parity. The dataset gate requires ten
-successful exported demonstrations and readback.
+## 七物料发布门槛
 
-Training seeds occupy 0–9999; sorting evaluation seeds are 10000–10019 and skill
-evaluation seeds 50000–50019. The fixed test cases are a small regression set,
-not a claim of broad statistical generalization. Later stages add independent
-validation/test splits before tuning learning policies.
+同一进程执行种子 20000–20019，共 20 场 / 140 件：至少 18 场完整成功、133 件正确入盘；
+成功场景无错分，无专家兜底，所有成功/失败/超时均自动进入下一回合。运行时使用几何基础
+策略与 NoOp 增强。单件视觉验证要求正确颜色、完整轮廓入盘、唯一预留、夹爪撤离和至少
+0.2 s 间隔的三次稳定观测；整场检查库存、占位和源区剩余。真值只用于独立评测。
 
-M1 does not claim trained multi-instruction behavior, solved RL grasping,
-contact-rich world-model planning, sim-to-real transfer, deployment to humans or
-quadrupeds, or production readiness. Resume statements should distinguish the
-author's integration and new sorting/hybrid implementation from upstream
-algorithms and public pretrained models. Add numerical claims only from the
-published measured report.
+开发布局使用 0–9999，发布验收使用 20000–20019；运行命令和散列进入 manifest，
+逐回合保留在报告中。`scripts/acceptance_basic.py` 独立检查门槛、轨迹、模型/渲染复用和
+GPU 0。具体实测以 RESULTS_BASIC.md 为准；不从单个演示推断成功率。
+
+本阶段不新增 RL 或世界模型训练任务。后续抓取世界模型需要新的接触/抓取状态定义和数据；
+旧 Reach 动力学模型不能直接称为抓取后果预测器。Residual SAC 奖励需同时记录稳定抓取、
+抬升和实际分拣成功的正反馈，以及碰撞、动作幅度、无效动作成本，并区分特权训练与视觉执行。
+
+## M1 历史门槛
+
+M1 的专家/视觉/hybrid 三物料阈值分别为 90%/80%/70%；世界模型 Reach 80%，各 20 场。
+ACT/VLA 公开权重各 20 次兼容任务真实推理，无性能门槛。SAC Reach/Lift 各 4096 步、
+5 次评估，验证参数更新/恢复；10 条 LeRobot 示范导出读回。排序种子 10000–10019、
+技能种子 50000–50019。SAC smoke 的通过不表示学会抓取，公开单物块模型也不表示已训练
+七物料分拣。历史材料保留原结果与局限。

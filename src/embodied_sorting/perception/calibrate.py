@@ -98,13 +98,7 @@ def calibrate(env, placements=DEFAULT_PLACEMENTS, camera: str = "rgbd", verbose:
 
     # Park everything else out of view; arm at rest (sensing pose)
     env.reset(
-        options={
-            "layout": {
-                "block_red": (0.45, 0.25, 0.0),
-                "block_green": (0.45, 0.35, 0.0),
-                "block_yellow": (0.55, 0.30, 0.0),
-            }
-        }
+        options={"layout": {name: (0.5 + 0.04 * i, 0.3, 0.0) for i, name in enumerate(env._body_names)}}
     )
     key = env.model.key("rest")
     env.data.qpos[:6] = key.qpos[:6]

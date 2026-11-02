@@ -21,7 +21,7 @@ def test_delta_uses_setpoint_and_clips():
 
 
 def test_seeded_layouts_and_joint_mapping():
-    env = WorkstationEnv()
+    env = WorkstationEnv("sorting")
     try:
         a, _ = env.reset(seed=10000)
         poses = {c: env.gt_object_pose(c)[0] for c in env.colors}
@@ -41,7 +41,7 @@ def test_seeded_layouts_and_joint_mapping():
 
 
 def test_rotated_footprint_and_stability_are_required():
-    env = WorkstationEnv()
+    env = WorkstationEnv("sorting")
     try:
         env.reset(seed=10001)
         xy = np.array(env.trays["red"])
@@ -61,7 +61,7 @@ def test_rotated_footprint_and_stability_are_required():
 
 
 def test_expert_completes_and_executor_owns_steps(tmp_path):
-    env = WorkstationEnv()
+    env = WorkstationEnv("sorting")
     try:
         policy = GeometricPolicy("expert")
         executor = Executor(env, policy)
@@ -77,7 +77,7 @@ def test_expert_completes_and_executor_owns_steps(tmp_path):
 
 
 def test_vision_context_has_no_oracle():
-    env = WorkstationEnv()
+    env = WorkstationEnv("sorting")
     try:
         executor = Executor(env, GeometricPolicy("vision"))
         assert executor.context.oracle is None

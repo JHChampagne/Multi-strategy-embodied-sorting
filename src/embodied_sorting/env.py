@@ -16,13 +16,18 @@ ASSETS = Path(__file__).parent / "assets" / "so_arm100"
 class WorkstationEnv(gym.Env):
     metadata = {"render_modes": ["rgb_array"], "render_fps": 15}
 
-    def __init__(self, task="sorting", images=False, max_steps=None, render_mode=None):
-        if task not in {"sorting", "pickplace_compat", "reach", "lift"}:
+    def __init__(self, task="sorting_basic", images=False, max_steps=None, render_mode=None):
+        if task not in {"sorting_basic", "sorting", "pickplace_compat", "reach", "lift"}:
             raise ValueError(f"Unsupported task: {task}")
         self.task = task
-        self.model = mujoco.MjModel.from_xml_path(
-            str(ASSETS / ("sorting.xml" if task == "sorting" else "pickplace.xml"))
-        )
+        if task == "sorting_basic":
+            from .scene import build_basic_model
+
+            self.model = build_basic_model(ASSETS)
+        else:
+            self.model = mujoco.MjModel.from_xml_path(
+                str(ASSETS / ("sorting.xml" if task == "sorting" else "pickplace.xml"))
+            )
         self.data = mujoco.MjData(self.model)
         self.joint_ids = np.array([self.model.joint(j).id for j in JOINT_NAMES])
         self.qadrs = self.model.jnt_qposadr[self.joint_ids]
@@ -35,10 +40,22 @@ class WorkstationEnv(gym.Env):
         self.img_hw = (480, 640)
         self.images = images
         self.render_mode = render_mode
-        self.max_steps = max_steps or (1800 if task == "sorting" else 240)
-        self.colors = COLORS if task == "sorting" else ("red",)
-        self.trays = dict(TRAYS) if task == "sorting" else {"red": TRAYS["red"]}
-        self._body_names = {c: f"block_{c}" if task == "sorting" else "block" for c in self.colors}
+        self.max_steps = max_steps or (
+            5000 if task == "sorting_basic" else 1800 if task == "sorting" else 240
+        )
+        self.colors = COLORS if task in {"sorting", "sorting_basic"} else ("red",)
+        self.trays = dict(TRAYS) if task in {"sorting", "sorting_basic"} else {"red": TRAYS["red"]}
+        self.tray_half = TRAY_HALF
+        if task == "sorting_basic":
+            from .scene import BASIC_TRAYS, BASIC_TRAY_HALF
+
+            self.trays, self.tray_half = dict(BASIC_TRAYS), BASIC_TRAY_HALF
+        if task == "sorting_basic":
+            from .scene import OBJECT_IDS
+
+            self._body_names = {name: name for name in OBJECT_IDS}
+        else:
+            self._body_names = {c: f"block_{c}" if task == "sorting" else "block" for c in self.colors}
         self._free_adrs = {
             c: self.model.jnt_qposadr[self.model.joint(n + "_free").id] for c, n in self._body_names.items()
         }
@@ -47,7 +64,7 @@ class WorkstationEnv(gym.Env):
         self._stable = {c: 0 for c in self.colors}
         self.instruction = (
             "Sort the red, green and yellow blocks into their assigned trays."
-            if task == "sorting"
+            if task in {"sorting", "sorting_basic"}
             else "Pick up the red block and place it in the blue tray."
         )
         self.action_space = gym.spaces.Box(
@@ -65,6 +82,20 @@ class WorkstationEnv(gym.Env):
         spaces["task"] = gym.spaces.Text(max_length=256, charset=__import__("string").printable)
         self.observation_space = gym.spaces.Dict(spaces)
         mujoco.mj_forward(self.model, self.data)
+        if task == "sorting_basic":
+            from .control.kinematics import RobotKinematics
+            from .scene import tray_slots
+
+            self._layout_kinematics = RobotKinematics(self.model)
+            state = self.model.key("home").qpos[self.qadrs]
+            for color, slots in tray_slots().items():
+                for xy in slots:
+                    if np.any(np.abs(xy - self.trays[color]) + BLOCK_HALF > self.tray_half):
+                        raise ValueError(f"Slot footprint outside {color} tray")
+                    roll, _ = self._layout_kinematics.grasp_frame(xy, 0, state, height=0.065)
+                    q = self._layout_kinematics.solve([*xy, 0.075], state, roll)
+                    if self._layout_kinematics.tray_clearance(q, 1.4) < 0.008:
+                        raise ValueError(f"Slot in {color} lacks gripper clearance")
         if task == "sorting":
             for color, xy in self.trays.items():
                 for z in [0.055, 0.085]:
@@ -100,6 +131,20 @@ class WorkstationEnv(gym.Env):
         self.data.ctrl[self.act_ids] = home.ctrl[self.act_ids]
         self._steps = 0
         self._stable = {c: 0 for c in self.colors}
+        if self.task == "sorting_basic":
+            from .scene import random_colors
+
+            self._object_colors = random_colors(self.np_random)
+            layout = options.get("layout") or self.sample_basic_layout()
+            for name, color in self._object_colors.items():
+                self._set_block(name, *layout[name])
+                self.model.geom_matid[self.model.geom(name + "_geom").id] = self.model.material(
+                    "block_" + color
+                ).id
+            a = self.model.jnt_qposadr[self.model.joint("calib_sphere_free").id]
+            self.data.qpos[a : a + 7] = [0.5, 0.3, 0.015, 1, 0, 0, 0]
+            mujoco.mj_forward(self.model, self.data)
+            return self.get_obs(), self.info()
         if self.task == "sorting":
             layout = options.get("layout") or self.sample_layout()
             for color in self.colors:
@@ -139,11 +184,71 @@ class WorkstationEnv(gym.Env):
                 raise RuntimeError("Could not sample a separated, reachable sorting layout")
         return layout
 
+    def sample_basic_layout(self):
+        """Whole-scene rejection sampling; never reduce the seven-object count."""
+        for _ in range(40):
+            placed = []
+            for name in self._body_names:
+                for _ in range(600):
+                    r = self.np_random.uniform(0.19, 0.27)
+                    th = self.np_random.uniform(np.deg2rad(-35), np.deg2rad(35))
+                    xy = np.array([r * np.sin(th), -r * np.cos(th)])
+                    if any(np.all(np.abs(xy - t) < 0.085) for t in map(np.asarray, self.trays.values())):
+                        continue
+                    if any(np.linalg.norm(xy - p) < 0.05 for p in placed):
+                        continue
+                    if any(
+                        solve_ik(self.model, self.data, [*xy, z], q_init=self.model.key("home").qpos[:5])[1]
+                        > 0.003
+                        for z in [0.015, 0.10]
+                    ):
+                        continue
+                    placed.append(xy)
+                    break
+                else:
+                    break
+            if len(placed) == 7:
+                layout = {
+                    name: (*xy, float(self.np_random.uniform(0, np.pi / 2)))
+                    for name, xy in zip(self._body_names, placed)
+                }
+                if all(self._layout_grasp_reachable(x, y, yaw) for x, y, yaw in layout.values()):
+                    return layout
+        raise RuntimeError("reset_failed: could not sample seven separated reachable blocks")
+
+    def _layout_grasp_reachable(self, x, y, yaw):
+        """Initialization-only reachability check; runtime uses visual estimates."""
+        from .scene import GRASP_OPEN, STANDOFF_DISTANCE
+
+        kin = self._layout_kinematics
+        state = self.model.key("home").qpos[self.qadrs]
+        xy = np.array([x, y])
+        try:
+            frames = kin.grasp_candidates(xy, yaw, state)
+        except RuntimeError:
+            return False
+        for roll, direction in frames:
+            try:
+                for point in [xy + STANDOFF_DISTANCE * direction, xy]:
+                    q = kin.solve([*point, 0.028], state, roll)
+                    if kin.tray_clearance(q, GRASP_OPEN) < 0.008:
+                        raise RuntimeError("Tray obstructs grasp")
+                for jaw in [0.3, 0.15, 0.0]:
+                    if kin.tray_clearance(q, jaw) < 0.008:
+                        raise RuntimeError("Tray obstructs closure sweep")
+                return True
+            except RuntimeError:
+                continue
+        return False
+
     def step(self, action):
         command = action if isinstance(action, ActionCommand) else ActionCommand(action)
         self.data.ctrl[self.act_ids] = command.absolute(self.control, self.limits)
         mujoco.mj_step(self.model, self.data, nstep=self.n_substeps)
         self._steps += 1
+        if self.task == "sorting_basic":
+            # Runtime termination is owned by the visual TaskManager, never simulator truth.
+            return self.get_obs(), 0.0, False, self._steps >= self.max_steps, self.info()
         for c in self.colors:
             self._stable[c] = self._stable[c] + 1 if self.placement_valid(c) else 0
         success = self.is_success()
@@ -198,6 +303,8 @@ class WorkstationEnv(gym.Env):
         )
 
     def info(self):
+        if self.task == "sorting_basic":
+            return {"steps": self._steps, "control_dt": self.control_dt}
         wrong = {}
         for color in self.colors:
             body = self.data.body(self._body_names[color])

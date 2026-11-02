@@ -22,3 +22,9 @@ New work: common simulation core and contracts, scene/placement validation,
 multi-material scenes and policies, isolated perception/privileged views,
 single-owner executor, hybrid controller handovers, unified CLI, dataset and
 training integration, acceptance tests, measurement and documentation.
+
+Seven-object stage additions: parameterized seven-instance MJCF scene,
+three-slot bins, visual identity/occupancy ledger, single-goal base policies,
+phase-gated local-optimizer contract, sensor-only task manager, independent
+truth audit, automatic multi-episode reset, manifests and acceptance gates.
+Legacy M1 robot and scene assets remain unchanged.
