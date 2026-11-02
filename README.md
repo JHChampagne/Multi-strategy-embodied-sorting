@@ -4,6 +4,10 @@
 颜色数量随机分配为 3/2/2，位置和朝向随机。统一任务执行器管理整场任务，基础策略可插拔，
 局部优化器预留 Residual SAC 和世界模型控制增强接口。
 
+**独立验收：20/20 场、140/140 件正确入盘，0 错分、0 视觉误判，无专家兜底。**
+
+![七物料分拣完成](docs/media/sorting_basic_final.png)
+
 当前七物料能力、逐回合记录和限制见 [独立验收报告](docs/RESULTS_BASIC.md)。
 [七物料演示](docs/media/sorting_basic.mp4) · [架构](docs/ARCHITECTURE.md) · [阶段里程碑](docs/MILESTONES.md)
 

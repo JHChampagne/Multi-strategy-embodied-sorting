@@ -1,0 +1,127 @@
+{
+  "test_suite": {
+    "passed": 22,
+    "rendering": true,
+    "privileged_runtime_access_forbidden": true
+  },
+  "ruff": "passed",
+  "pip_check": "No broken requirements found",
+  "editable_install": "embodied-sorting 0.2.0",
+  "legacy_regression_smoke": [
+    {
+      "policy": "vision",
+      "task": "sorting",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true,
+            "green": true,
+            "yellow": true
+          },
+          "steps": 506,
+          "wrong_tray": {
+            "red": false,
+            "green": false,
+            "yellow": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 33.39599999999485,
+          "wall_seconds": 3.946032219566405,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "ik": 506
+          },
+          "fallback_count": 0,
+          "events": [
+            {
+              "material": "red",
+              "attempt": 0,
+              "event": "verified"
+            },
+            {
+              "material": "green",
+              "attempt": 0,
+              "event": "verified"
+            }
+          ],
+          "latency_ms_p50": 0.010685529559850693,
+          "latency_ms_p95": 1.1976086534559727,
+          "latency_ms_p99": 2.1962374914437524,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 1.0
+    },
+    {
+      "policy": "act",
+      "task": "pickplace_compat",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 110,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 7.2599999999994225,
+          "wall_seconds": 0.9584418786689639,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "act": 110
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 2.1423152647912502,
+          "latency_ms_p95": 14.478510478511453,
+          "latency_ms_p99": 15.237571531906722,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 1.0
+    },
+    {
+      "policy": "vla",
+      "task": "pickplace_compat",
+      "episodes": [
+        {
+          "seed": 10000,
+          "success": true,
+          "placed": {
+            "red": true
+          },
+          "steps": 176,
+          "wrong_tray": {
+            "red": false
+          },
+          "wrong_sort_count": 0,
+          "sim_seconds": 11.616000000000549,
+          "wall_seconds": 2.587409382686019,
+          "reason": "success",
+          "retries": 0,
+          "handovers": 0,
+          "controllers": {
+            "vla": 176
+          },
+          "fallback_count": 0,
+          "events": [],
+          "latency_ms_p50": 3.8656601682305336,
+          "latency_ms_p95": 5.370687693357468,
+          "latency_ms_p99": 246.36228033341467,
+          "legacy_success": true
+        }
+      ],
+      "success_rate": 1.0
+    }
+  ],
+  "note": "One episode each is a compatibility check, not a performance benchmark."
+}

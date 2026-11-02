@@ -1,0 +1,2626 @@
+{
+  "passed": true,
+  "checks": {
+    "exactly_20_unfiltered_episodes": true,
+    "independent_contiguous_seeds": true,
+    "whole_scene_90_percent": true,
+    "item_95_percent": true,
+    "success_scenes_have_no_wrong_sort": true,
+    "no_expert_fallback": true,
+    "single_process_and_model": true,
+    "renderer_reused": true,
+    "automatic_reset": true,
+    "independent_geometry_and_noop": true,
+    "real_action_traces": true,
+    "gpu_0_only": true
+  },
+  "scene_successes": 20,
+  "scene_total": 20,
+  "correct_items": 140,
+  "item_total": 140,
+  "trace_sha256": {
+    "20000.jsonl": "6276ad5d201519f558db8d23dd4dcba98a4a1556a2e608cfac2d7ea014996fcc",
+    "20001.jsonl": "24ff2475a3136fcb4c15e9190d2226a2af8b76796a9168465899ec9714a4fad7",
+    "20002.jsonl": "da6ce54217c06357fdc19a052b0b5b0c171ec09375b47710f3b90563ecd8f394",
+    "20003.jsonl": "dae6beeed978c68e1f4f2f429f9741540c83f3dd49a06bf815be545b0d75d28b",
+    "20004.jsonl": "b85ad389888ab6598845411bead57f15bd72ce40ac9f4afac72c9d273fe83a41",
+    "20005.jsonl": "44cd7a00ef1bc44e55027911999a5e8f7efb8f21e84fa2e3ff123082cf92404d",
+    "20006.jsonl": "4e2453a774d8a6492ffa29d4ab866647fb932787f74dd4ce62978120729db380",
+    "20007.jsonl": "734528166aab8e8a09b7b4b7430ed476777bbc2524669fd420edcbfa2205d298",
+    "20008.jsonl": "0ee7fbd8bd7863fda0bdf08c7c1b89f95af70244dd8fdecbdfbed8b260390926",
+    "20009.jsonl": "673078b26a1550b1effa20eb2efd39a4e4a706280302d8f45f09670c7146ab29",
+    "20010.jsonl": "d5566cad40e8f405f4adbd84f5588259b85c47b472c9e12425f308947d092e88",
+    "20011.jsonl": "3543999a9308ac70533c400f5ea80a7645574913fe9ace593a076b160d16163e",
+    "20012.jsonl": "4e059ce8db4951007f8668854cfecccb214caa49f9b872f610f545b9b95575a7",
+    "20013.jsonl": "274e33c629b6281f1c7a5ba464c7d5048c126d258bf715e357ca6456d9bdf5ce",
+    "20014.jsonl": "cdf1cf58d6df38258de2e52e26407db58f65c86a8bd5abc53d2337c243cdc8d2",
+    "20015.jsonl": "bc4fdb4fef26e5c315e9356ec54734ec4564b2541b7d258ea872ce0366d179bd",
+    "20016.jsonl": "de75c16c373820b274cadd46e67e1a5a8f538f745b721355a09d9425981b139f",
+    "20017.jsonl": "edc10fd1e36e2e18322b1663444733c7311c4a9dd286ff0b1f17d103f488484b",
+    "20018.jsonl": "88315532de47babb37d76110d99c8f6075b05509cf4062fba5cc347f04adddea",
+    "20019.jsonl": "01c18430fec27bf9c0050ce2316d41ae1f463c8667e4e62a8a113111f993db34"
+  },
+  "manifest": {
+    "created_utc": "2026-11-02T14:21:20.022204+00:00",
+    "python": "3.12.16",
+    "versions": {
+      "mujoco": "3.17.0",
+      "numpy": "2.2.6",
+      "scipy": "1.18.1",
+      "torch": "2.9.1",
+      "torchvision": "0.24.1",
+      "lerobot": "0.6.1",
+      "transformers": "5.5.4",
+      "gymnasium": "1.4.0",
+      "stable-baselines3": "2.9.2"
+    },
+    "source_sha256": "9a8d657dc0867c0bc8821c8acf641ee78c644da9dc509eba65d9b5a57078039e",
+    "git_head": "f63cd51db4be9e9180330710b6263a465c0ffc40",
+    "git_dirty": false,
+    "command": [
+      ".venv/bin/workcell",
+      "evaluate",
+      "--base-policy",
+      "geometric",
+      "--episodes",
+      "20",
+      "--seed",
+      "20000",
+      "--output",
+      "outputs/basic",
+      "--video"
+    ],
+    "gpu": "0",
+    "upstream_lock_sha256": "d00fee695d4eb8387f2eb364f193a9c2e39d1bbff4f6bc2076fcf90af9cc9175",
+    "calibration": {
+      "position": [
+        9.097347574820672e-05,
+        -0.42063840455074375,
+        0.3802542963984825
+      ],
+      "rotation": [
+        [
+          0.9999998177059998,
+          -0.0003457689121279968,
+          0.0004950068959832899
+        ],
+        [
+          0.0005306305444392632,
+          0.8944401155107937,
+          -0.44718743072258266
+        ],
+        [
+          -0.000288130513783678,
+          0.4471876118687754,
+          0.8944401359352725
+        ]
+      ],
+      "residual_mm": 0.48867723337354246,
+      "fovy": 60.0
+    }
+  },
+  "report": {
+    "task": "sorting_basic",
+    "base_policy": "GeometricBasePolicy",
+    "enhancer": "NoOpOptimizer",
+    "episodes": [
+      {
+        "seed": 20000,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 42,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "yellow:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 21.81633852329105,
+        "policy_latency_ms": {
+          "mean": 0.21631463254458486,
+          "p95": 1.0655676946043966
+        },
+        "perception_latency_ms": {
+          "mean": 536.1809868365526,
+          "p95": 703.4366043284533
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20001,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 44,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "yellow:2"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.300331505946815,
+        "policy_latency_ms": {
+          "mean": 0.20024595098365777,
+          "p95": 0.9881868958473204
+        },
+        "perception_latency_ms": {
+          "mean": 483.8869050145149,
+          "p95": 508.49748495966196
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20002,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 44,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.261853616684675,
+        "policy_latency_ms": {
+          "mean": 0.172405572533855,
+          "p95": 0.992062222212553
+        },
+        "perception_latency_ms": {
+          "mean": 490.4262278974056,
+          "p95": 550.4916448146104
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20003,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 38,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:2"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.593133957125247,
+        "policy_latency_ms": {
+          "mean": 0.16631371654149307,
+          "p95": 0.9802731219679115
+        },
+        "perception_latency_ms": {
+          "mean": 477.1596683189273,
+          "p95": 498.37518557906145
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20004,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 38,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:2"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.583286109380424,
+        "policy_latency_ms": {
+          "mean": 0.16329644025114684,
+          "p95": 0.9918672498315572
+        },
+        "perception_latency_ms": {
+          "mean": 485.0851896777749,
+          "p95": 632.450777478516
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20005,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 52,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.42286945413798,
+        "policy_latency_ms": {
+          "mean": 0.16859984504943867,
+          "p95": 0.9853661991655825
+        },
+        "perception_latency_ms": {
+          "mean": 487.1314575150609,
+          "p95": 572.3445566371081
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20006,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 28,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "yellow:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.168264964595437,
+        "policy_latency_ms": {
+          "mean": 0.2027267460213151,
+          "p95": 0.9837848600000141
+        },
+        "perception_latency_ms": {
+          "mean": 455.15159595757723,
+          "p95": 479.7443548217416
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20007,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 46,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "yellow:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.614113837480545,
+        "policy_latency_ms": {
+          "mean": 0.19267545873763356,
+          "p95": 0.9936796966940162
+        },
+        "perception_latency_ms": {
+          "mean": 479.5376271754503,
+          "p95": 493.4606298804283
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20008,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 45,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "yellow:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.72375203575939,
+        "policy_latency_ms": {
+          "mean": 0.1970316164282172,
+          "p95": 0.9995545260608196
+        },
+        "perception_latency_ms": {
+          "mean": 467.47607216238976,
+          "p95": 483.17502848803997
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20009,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 39,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:2"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.522708358243108,
+        "policy_latency_ms": {
+          "mean": 0.18987462212303746,
+          "p95": 0.9996207896620034
+        },
+        "perception_latency_ms": {
+          "mean": 492.86442443728447,
+          "p95": 520.6247720867395
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20010,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 27,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.97772946022451,
+        "policy_latency_ms": {
+          "mean": 0.1663110393758529,
+          "p95": 0.9974225424230099
+        },
+        "perception_latency_ms": {
+          "mean": 468.3853467553854,
+          "p95": 485.0914902985096
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20011,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 45,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.869880152866244,
+        "policy_latency_ms": {
+          "mean": 0.16910454221193577,
+          "p95": 0.9905678220093249
+        },
+        "perception_latency_ms": {
+          "mean": 480.86348481476307,
+          "p95": 504.0593704208731
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20012,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 38,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "yellow:2"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.604549222625792,
+        "policy_latency_ms": {
+          "mean": 0.19924233023980725,
+          "p95": 0.99625289440155
+        },
+        "perception_latency_ms": {
+          "mean": 468.39102536439896,
+          "p95": 483.3726182579994
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20013,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 36,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.794534237124026,
+        "policy_latency_ms": {
+          "mean": 0.1786642273163974,
+          "p95": 1.0117556899785995
+        },
+        "perception_latency_ms": {
+          "mean": 482.4725026264787,
+          "p95": 500.44702738523483
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20014,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 42,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "red:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.899792133830488,
+        "policy_latency_ms": {
+          "mean": 0.1685161126523814,
+          "p95": 1.0091939009726045
+        },
+        "perception_latency_ms": {
+          "mean": 481.743311136961,
+          "p95": 507.22809098660946
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20015,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 44,
+        "steps": 1548,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 1,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "retry",
+            "track_id": "track_000",
+            "attempt": 1,
+            "reason": "controller_error:empty_grasp_from_jaw_encoder"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "yellow:1"
+          }
+        ],
+        "sim_seconds": 102.16799999994329,
+        "wall_seconds": 17.969199704006314,
+        "policy_latency_ms": {
+          "mean": 0.17793331556167122,
+          "p95": 0.9995732456445695
+        },
+        "perception_latency_ms": {
+          "mean": 472.0581968744787,
+          "p95": 497.8663995862007
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 1,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 2
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20016,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 34,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.066214056685567,
+        "policy_latency_ms": {
+          "mean": 0.1701295679045278,
+          "p95": 0.9966276120394464
+        },
+        "perception_latency_ms": {
+          "mean": 479.4300554320216,
+          "p95": 509.97041687369347
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20017,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 39,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "red:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "yellow:2"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.036844766698778,
+        "policy_latency_ms": {
+          "mean": 0.19637431076842288,
+          "p95": 1.0015688370913263
+        },
+        "perception_latency_ms": {
+          "mean": 467.1718018129468,
+          "p95": 486.88674475997686
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20018,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 33,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 17.00939668249339,
+        "policy_latency_ms": {
+          "mean": 0.1733076404408858,
+          "p95": 0.9953227825462816
+        },
+        "perception_latency_ms": {
+          "mean": 470.3427805379033,
+          "p95": 486.99844665825367
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      },
+      {
+        "seed": 20019,
+        "perceived_success": true,
+        "gt_success": true,
+        "success": true,
+        "placed": {
+          "object_000": true,
+          "object_001": true,
+          "object_002": true,
+          "object_003": true,
+          "object_004": true,
+          "object_005": true,
+          "object_006": true
+        },
+        "correct_items": 7,
+        "wrong_sort_count": 0,
+        "dropped_count": 0,
+        "collision_steps": 25,
+        "steps": 1445,
+        "reason": "completed",
+        "visual_sorted": 7,
+        "retries": 0,
+        "events": [
+          {
+            "event": "initialized",
+            "count": 7
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_006",
+            "slot_id": "yellow:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_002",
+            "slot_id": "green:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_004",
+            "slot_id": "green:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_005",
+            "slot_id": "red:0"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_003",
+            "slot_id": "green:2"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_000",
+            "slot_id": "yellow:1"
+          },
+          {
+            "event": "sorted",
+            "track_id": "track_001",
+            "slot_id": "red:1"
+          }
+        ],
+        "sim_seconds": 95.36999999995913,
+        "wall_seconds": 16.578493907116354,
+        "policy_latency_ms": {
+          "mean": 0.16905650406754097,
+          "p95": 1.0008255951106546
+        },
+        "perception_latency_ms": {
+          "mean": 474.6609116718173,
+          "p95": 496.55780028551817
+        },
+        "model_identity": 139908952186864,
+        "renderer_identities": {
+          "(480, 640)": 139908819434864
+        },
+        "failed_attempts": 0,
+        "fallback_count": 0,
+        "tracks": [
+          {
+            "track_id": "track_000",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_001",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_002",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_003",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_004",
+            "color": "green",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_005",
+            "color": "red",
+            "status": "sorted",
+            "attempts": 1
+          },
+          {
+            "track_id": "track_006",
+            "color": "yellow",
+            "status": "sorted",
+            "attempts": 1
+          }
+        ]
+      }
+    ],
+    "success_rate": 1.0,
+    "item_success_rate": 1.0,
+    "wrong_sort_count": 0,
+    "false_positive_count": 0,
+    "expected_objects_per_episode": 7,
+    "same_process": true,
+    "automatic_reset": true,
+    "pid": 640227,
+    "control_dt": 0.066,
+    "max_steps": 5000,
+    "task_config": {
+      "trays": {
+        "red": [
+          -0.18,
+          -0.13
+        ],
+        "green": [
+          0.18,
+          -0.13
+        ],
+        "yellow": [
+          0.22,
+          -0.005
+        ]
+      },
+      "tray_half": 0.052,
+      "cube_edge": 0.024,
+      "minimum_spacing": 0.05,
+      "colors": "permuted 3/2/2",
+      "max_extra_retries": 2
+    }
+  }
+}
